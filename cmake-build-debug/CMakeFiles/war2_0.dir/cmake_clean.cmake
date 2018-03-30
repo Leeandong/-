@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/war2_0.dir/Sword.cpp.o"
   "CMakeFiles/war2_0.dir/Arrow.cpp.o"
   "CMakeFiles/war2_0.dir/Bomb.cpp.o"
+  "CMakeFiles/war2_0.dir/City.cpp.o"
   "war2_0.pdb"
   "war2_0"
 )

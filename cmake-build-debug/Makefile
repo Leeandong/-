@@ -177,6 +177,33 @@ Bomb.cpp.s:
 	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Bomb.cpp.s
 .PHONY : Bomb.cpp.s
 
+City.o: City.cpp.o
+
+.PHONY : City.o
+
+# target to build an object file
+City.cpp.o:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/City.cpp.o
+.PHONY : City.cpp.o
+
+City.i: City.cpp.i
+
+.PHONY : City.i
+
+# target to preprocess a source file
+City.cpp.i:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/City.cpp.i
+.PHONY : City.cpp.i
+
+City.s: City.cpp.s
+
+.PHONY : City.s
+
+# target to generate assembly for a file
+City.cpp.s:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/City.cpp.s
+.PHONY : City.cpp.s
+
 Dragon.o: Dragon.cpp.o
 
 .PHONY : Dragon.o
@@ -489,6 +516,9 @@ help:
 	@echo "... Bomb.o"
 	@echo "... Bomb.i"
 	@echo "... Bomb.s"
+	@echo "... City.o"
+	@echo "... City.i"
+	@echo "... City.s"
 	@echo "... Dragon.o"
 	@echo "... Dragon.i"
 	@echo "... Dragon.s"

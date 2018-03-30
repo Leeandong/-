@@ -16,6 +16,14 @@ CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Warriors.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Weapon.h
 
+CMakeFiles/war2_0.dir/City.cpp.o: ../Arrow.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../City.cpp
+CMakeFiles/war2_0.dir/City.cpp.o: ../City.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../Sword.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../Warriors.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../Weapon.h
+
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Bomb.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Dragon.cpp

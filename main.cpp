@@ -47,15 +47,13 @@
 # include "Lion.h"
 # include "Wolf.h"
 #include "Dragon.h"
+#include "crops.h"
 
 int main()
 {
-
-    Dragon d(0,29,20);
-    Wolf w(1,30);
-    d.attack(&w);
-    w.attack(&d);
-    w.attack(&d);
-    w.attack(&d);
-    return 0;
+    int lives=1000;  //初始时候赋给司令部的数据
+    string a="blue";
+    string b="red";
+    crops blue(lives,blue_sequence,a);
+    crops red(lives,red_sequence,b);
 }
