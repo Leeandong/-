@@ -63,3 +63,14 @@ City::City(int index) : index(index) {
     flag=0;
     lives=0;
 }
+
+void City::delete_warroris() {
+    if(b)
+    {
+        delete(b);
+    }
+    if(r)
+    {
+        delete(r);
+    }
+}

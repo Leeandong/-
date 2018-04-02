@@ -4,7 +4,10 @@
 
 #include "Wolf.h"
 
-Wolf::Wolf(int serial_num, int strength) : Warriors(serial_num, strength) {}
+Wolf::Wolf(int serial_num, int strength,string& crops_) : Warriors(serial_num, strength) {
+    name="wolf";
+    crops=crops_;
+}
 
 void Wolf::fightback(Warriors *p) {
     Warriors::attack(p);

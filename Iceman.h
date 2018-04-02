@@ -12,9 +12,9 @@
 using namespace std;
 
 class Iceman: public Warriors {
-    string name="iceman";
+
 public:
-    Iceman(int serial_num, int strength);
+    Iceman(int serial_num, int strength,string & crops_);
     virtual ~Iceman();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数

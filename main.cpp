@@ -61,35 +61,36 @@ void creat_warriors(crops&c)  //制造士兵 传入1制造红方的士兵，传�
     {
         case 0:
         {
-            temp=new Dragon(c.get_num(),warriors_strength[0],c.get_lives());
+            temp=new Dragon(c.get_num(),warriors_strength[0],c.get_lives(),c.get_name());
+
             break;
         }
         case 1:
         {
-            temp=new Ninja(c.get_num(),warriors_strength[1]);
+            temp=new Ninja(c.get_num(),warriors_strength[1],c.get_name());
             break;
         }
         case 2:
         {
-            temp=new Iceman(c.get_num(),warriors_strength[2]);
+            temp=new Iceman(c.get_num(),warriors_strength[2],c.get_name());
             break;
         }
         case 3:
         {
-            temp=new Lion(c.get_num(),warriors_strength[3]);
+            temp=new Lion(c.get_num(),warriors_strength[3],c.get_name(),c.get_lives());
             break;
         }
         case 4:
         {
-            temp = new Wolf(c.get_num(), warriors_strength[4]);
+            temp = new Wolf(c.get_num(), warriors_strength[4],c.get_name());
             break;
         }
 
     }
     if(temp)
     {
+        temp->cout_born();
         c.add(temp);
-        c.cout_create();
     }
     else
     {
@@ -123,6 +124,7 @@ int main()
         game_time++;
 
     }
+
 
 
 

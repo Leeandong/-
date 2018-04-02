@@ -27,6 +27,7 @@ public:
     void attack();  //判断谁先进行攻击
     bool check_r();  //检查是否有红士兵,有红色士兵时返回true
     bool check_b();  //检查是否有蓝士兵，有蓝色士兵时返回true
+    void delete_warroris();  //删除new的新对象
 
 };
 

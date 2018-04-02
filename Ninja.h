@@ -14,15 +14,14 @@ using namespace std;
 class Ninja: public Warriors {
 public:
 
-    Ninja(int serial_num, int strength);
+    Ninja(int serial_num, int strength,string& crops_);
     virtual ~Ninja();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
     virtual void attack(Warriors *p); //攻击函数
 
 
-private:
-    string name="ninja";
+
 
 };
 

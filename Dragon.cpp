@@ -3,11 +3,12 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include "Dragon.h"
 #include "Global.h"
 using namespace std;
 
-Dragon::Dragon(int serial_num, int strength,int remain_lives) : Warriors(serial_num, strength) {
+Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : Warriors(serial_num, strength) {
     int tmp=serial_num%3;
     switch (tmp)
     {
@@ -29,6 +30,8 @@ Dragon::Dragon(int serial_num, int strength,int remain_lives) : Warriors(serial_
 
     }
     morale=remain_lives/warriors_strength[0];
+    name="dragon";
+    crops=crops_;
 
 
 }
@@ -63,6 +66,11 @@ void Dragon::attack(Warriors *p) {
         cout<<"cheer"<<endl;
     }
 
+}
+
+void Dragon::cout_born() {
+    Warriors::cout_born();
+    cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
 }
 
 

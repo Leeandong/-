@@ -6,7 +6,8 @@
 
 
 
-Ninja::Ninja(int serial_num, int strength) : Warriors(serial_num, strength) {
+Ninja::Ninja(int serial_num, int strength,string& crops_) : Warriors(serial_num, strength) {
+    name="ninja";
     int tmp=serial_num%3;
     switch (tmp)
     {
@@ -27,6 +28,7 @@ Ninja::Ninja(int serial_num, int strength) : Warriors(serial_num, strength) {
         }
 
     }
+    crops=crops_;
 }
 
 

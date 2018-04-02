@@ -4,8 +4,10 @@
 
 #include "Iceman.h"
 
-Iceman::Iceman(int serial_num, int strength) : Warriors(serial_num, strength) {
+Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_num, strength) {
     int tmp=serial_num%3;
+    name="iceman";
+    crops=crops_;
     switch (tmp)
     {
         case 0: {
