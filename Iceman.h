@@ -11,7 +11,7 @@
 #include "Global.h"
 using namespace std;
 
-class Iceman: Warriors {
+class Iceman: public Warriors {
     string name="iceman";
 public:
     Iceman(int serial_num, int strength);

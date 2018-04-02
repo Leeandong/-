@@ -16,45 +16,111 @@ crops::crops(int lives, int *p_warriors, const string &name
         num_warriors[i]=0;
 
     }
+    warriors=NULL;
     num=0;
     flag=0;
-    stop_flag=false;
+    index=0;
+
 }
 
 
-void crops::creat_warriors() {
-    for (int i=0;i<5;i++)
+
+//
+//void crops::creat_warriors() {
+//    for (int i=0;i<5;i++)
+//    {
+//        if(warriors_strength[p_warriors[(flag+i)%5]]<=lives)
+//        {
+//            break;
+//        }
+//    }
+//    lives -= warriors_strength[p_warriors[flag]];
+//    if(lives>=0)
+//    {
+//        num_warriors[p_warriors[flag]] += 1;
+//        num++;
+//        cout.width(3); // 设置宽度
+//        cout.fill('0');// 设置填充
+//        cout << game_time << ' ' << name << ' ' << warriors_name[p_warriors[flag]]
+//             << ' ' << num << " born with strength " << warriors_strength[p_warriors[flag]]
+//             << ',' << num_warriors[p_warriors[flag]] << ' ' << warriors_name[p_warriors[flag]]
+//             << " in " << name << " headquarter" << endl;
+//        flag=(flag+1)%5;
+//
+//    }
+//    else
+//    {
+//        cout.width(3); // 设置宽度
+//        cout.fill('0');// 设置填充
+//        cout<<game_time<<' '<<name<<" headquarter stops making warriors"<<endl;
+//        stop_flag=true;
+//
+//    }
+//
+//}
+
+int crops::which_to_creat() {
+    int i=0;
+    for (i;i<5;i++)
     {
         if(warriors_strength[p_warriors[(flag+i)%5]]<=lives)
-        {
             break;
-        }
     }
-    lives -= warriors_strength[p_warriors[flag]];
-    if(lives>=0)
+    if(i==5)
     {
-        num_warriors[p_warriors[flag]] += 1;
-        num++;
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << game_time << ' ' << name << ' ' << warriors_name[p_warriors[flag]]
-             << ' ' << num << " born with strength " << warriors_strength[p_warriors[flag]]
-             << ',' << num_warriors[p_warriors[flag]] << ' ' << warriors_name[p_warriors[flag]]
-             << " in " << name << " headquarter" << endl;
-        flag=(flag+1)%5;
-
+        return 5;
     }
     else
     {
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout<<game_time<<' '<<name<<" headquarter stops making warriors"<<endl;
-        stop_flag=true;
-
+        lives -= warriors_strength[p_warriors[flag]];
+        num_warriors[p_warriors[flag]] += 1;
+        num++;
+        return p_warriors[(flag)%5];
     }
+}
+
+int crops::get_num() {
+    return num;
+}
+
+
+int *crops::get_num_warriors() {
+    return num_warriors;
+}
+
+int crops::get_lives() {
+    return lives;
+}
+
+
+Warriors *crops::get() {
+    return warriors;
+}
+
+void crops::add(Warriors *w) {
+    warriors=w;
+
+}
+
+void crops::cout_stop() {
+
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<game_time<<' '<< name <<" headquarter stops making warriors"<<endl;
 
 };
 
-bool crops::if_stop(){
-        return stop_flag;
-};
+void crops::cout_create(){
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << game_time << ' ' << name << ' ' << warriors_name[p_warriors[flag]]
+         << ' ' << num << " born with strength " << warriors_strength[p_warriors[flag]]
+         << ',' << num_warriors[p_warriors[flag]] << ' ' << warriors_name[p_warriors[flag]]
+         << " in " << name << " headquarter" << endl;
+    flag=(flag+1)%5;
+
+}
+
+
+
+

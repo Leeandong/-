@@ -11,7 +11,7 @@
 #include "Global.h"
 using namespace std;
 
-class Ninja: Warriors {
+class Ninja: public Warriors {
 public:
 
     Ninja(int serial_num, int strength);
