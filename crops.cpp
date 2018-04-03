@@ -25,8 +25,8 @@ crops::crops(int lives, int *p_warriors, const string &name
 
 
 int crops::which_to_creat() {
-    int i=0;
-    for (i;i<5;i++)
+    int i;
+    for (i=0;i<5;i++)
     {
         if(warriors_strength[p_warriors[(flag+i)%5]]<=lives)
             break;
@@ -60,7 +60,9 @@ int crops::get_lives() {
 
 
 Warriors *crops::get() {
-    return warriors;
+    Warriors* temp=warriors;
+    warriors=NULL;
+    return temp;
 }
 
 void crops::add(Warriors *w) {
@@ -72,7 +74,7 @@ void crops::cout_stop() {
 
     cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
-    cout<<game_time<<' '<< name <<" headquarter stops making warriors"<<endl;
+    cout<<minutes<<' '<< name <<" headquarter stops making warriors"<<endl;
 
 };
 
@@ -88,6 +90,12 @@ void crops::delete_warriors() {
 
 string &crops::get_name() {
     return name;
+}
+
+crops::~crops() {
+    if(warriors)
+        delete(warriors);
+
 }
 
 

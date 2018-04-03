@@ -13,7 +13,8 @@
 #include <string>
 using namespace std;
 
-extern int game_time;
+//extern int game_time;
+extern int minutes;
 extern string  warriors_name[5];
 extern int   blue_sequence[5];
 extern int  red_sequence[5];

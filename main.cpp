@@ -104,7 +104,7 @@ void creat_warriors(crops&c)  //制造士兵 传入1制造红方的士兵，传�
 
 int main()
 {
-    int lives=20;  //初始时候赋给司令部的数据
+    int lives=6;  //初始时候赋给司令部的数据
     int N=1; //两座司令部之间的城市个数
     string a="blue";
     string b="red";
@@ -115,15 +115,29 @@ int main()
     {
         cities[i] = new City(i+1);
     }
-    int h=0; //时钟小时
-    int m=0; //时钟分钟
-    while(game_time<50)
+    minutes=0; //第0分钟制造士兵
+    creat_warriors(red);
+    creat_warriors(blue);
+    minutes+=5;  //第5分钟lion逃跑
+    for(int i=0;i<N;i++)
     {
-        creat_warriors(red);
-        creat_warriors(blue);
-        game_time++;
-
+        cities[i]->delete_run();
     }
+    minutes+=5; //第10分钟武士前进
+    cities[N-1]->delete_r();
+    cities[0]->delete_b();
+    for(int i=0;i<N-1;i++)
+    {
+        cities[N-1-i]->add_r(cities[N-i-2]->get_r());
+        cities[i]->add_b(cities[i+1]->get_b());
+    }
+    cities[0]->add_r(red.get());
+    cities[N-1]->add_b(blue.get());
+
+
+
+
+
 
 
 

@@ -31,3 +31,19 @@ void Lion::cout_born() {
     Warriors::cout_born();
     cout<<"Its loyalty is "<<loyalty<<endl;
 }
+
+bool Lion::run_away() {
+    if(loyalty<=0)
+    {
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+             <<" run away"<< endl;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+
+}

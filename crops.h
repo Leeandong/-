@@ -37,9 +37,12 @@ public:
     int get_lives(); //获得联盟剩余的生命元数目
     void add(Warriors* w); //添加当前产生出来的士兵
     string & get_name(); //获得当前联盟的名称
-    Warriors* get(); //获得联盟中停下的士兵
+    Warriors* get(); //获得联盟中停下的士兵,并将指针置为空指针
     void cout_stop(); //输出停止信息
-    void delete_warriors();  //删除主函数中new的warriors
+    void delete_warriors();
+
+    virtual ~crops();
+    //删除主函数中new的warriors
 
 
 

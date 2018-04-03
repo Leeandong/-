@@ -44,9 +44,13 @@ int Warriors::get_lives() {
 void Warriors::cout_born() {
     cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
-    cout << game_time << ' ' << crops << ' ' <<name<<' '<< serial_num
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
          <<' '<< "born"<< endl;
 
+}
+
+bool Warriors::run_away() {
+    return false;
 }
 
 

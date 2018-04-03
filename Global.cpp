@@ -7,7 +7,8 @@
 #include <string>
 using namespace std;
 
-int game_time=0;
+//int game_time=0;
+int minutes;
 string warriors_name[5]={"dragon","ninja","iceman","lion","wolf"};
 int red_sequence[5]={2,3,4,1,0};
 int blue_sequence[5]={3,0,1,2,4};

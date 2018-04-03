@@ -25,9 +25,15 @@ public:
     //更改旗帜的颜色
     int get_lives();  //获得城市的所有生命元
     void attack();  //判断谁先进行攻击
-    bool check_r();  //检查是否有红士兵,有红色士兵时返回true
-    bool check_b();  //检查是否有蓝士兵，有蓝色士兵时返回true
-    void delete_warroris();  //删除new的新对象
+    Warriors * get_r();  //检查是否有红士兵,有红色士兵时返回true
+    Warriors * get_b();  //检查是否有蓝士兵，有蓝色士兵时返回true
+    void add_r(Warriors* w);  //更新红士兵
+    void add_b(Warriors* w);    //更新蓝士兵
+    void delete_run(); //删除掉逃跑的狮子；
+    void delete_r();  //删除蓝士兵，并将指针置空
+    void delete_b();  //删除红士兵，并将指针置空
+    virtual ~City();
+
 
 };
 

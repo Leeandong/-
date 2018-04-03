@@ -21,6 +21,7 @@ public:
     virtual void attack(Warriors *p); //攻击函数
 
     virtual void cout_born();
+    virtual bool run_away(); //忠诚度低于一定值时逃跑
 };
 
 

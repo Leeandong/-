@@ -32,30 +32,7 @@ void City::attack() {
 
 }
 
-bool City::check_r() {
-    if(r)
-    {
-        return false;
-    }
-    else
-    {
-        return true;
-    }
 
-}
-
-bool City::check_b() {
-
-    if(b)
-    {
-        return false;
-    }
-    else
-    {
-        return true;
-    }
-
-}
 
 City::City(int index) : index(index) {
     r=NULL;
@@ -64,7 +41,22 @@ City::City(int index) : index(index) {
     lives=0;
 }
 
-void City::delete_warroris() {
+
+void City::delete_run() {
+    if(b)
+    {
+        if(b->run_away())
+        {
+            delete b;
+            b=NULL;
+        }
+
+    }
+
+}
+
+City::~City() {
+
     if(b)
     {
         delete(b);
@@ -73,4 +65,41 @@ void City::delete_warroris() {
     {
         delete(r);
     }
+
+
+}
+
+Warriors *City::get_r() {
+    return r;
+}
+
+Warriors *City::get_b() {
+    return b;
+}
+
+void City::add_r(Warriors *w) {
+    r=w;
+}
+
+void City::add_b(Warriors *w) {
+    b=w;
+
+}
+
+void City::delete_r() {
+    if(r)
+    {
+        delete r;
+        r=NULL;
+    }
+
+}
+
+void City::delete_b() {
+    if(b)
+    {
+        delete b;
+        b=NULL;
+    }
+
 }

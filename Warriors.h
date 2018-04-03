@@ -30,6 +30,7 @@ public:
     virtual void attack(Warriors *p); //攻击函数
     int get_lives();
     virtual void cout_born();
+    virtual bool run_away();
     virtual ~Warriors();
 
 };
