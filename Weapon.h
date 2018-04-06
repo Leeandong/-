@@ -5,6 +5,9 @@
 #ifndef WAR2_0_WEAPON_H
 #define WAR2_0_WEAPON_H
 
+#include "Weapon.h"
+
+
 class Warriors;
 
 

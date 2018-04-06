@@ -24,6 +24,7 @@ Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_n
         }
 
     }
+    attack_=warriors_attack[2];
 }
 
 Iceman::~Iceman() {

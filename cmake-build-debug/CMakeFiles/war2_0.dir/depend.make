@@ -4,6 +4,7 @@
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Arrow.cpp
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Arrow.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Warriors.h
@@ -12,6 +13,7 @@ CMakeFiles/war2_0.dir/Arrow.cpp.o: ../Weapon.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Bomb.cpp
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Bomb.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Bomb.cpp.o: ../Warriors.h
@@ -28,6 +30,7 @@ CMakeFiles/war2_0.dir/City.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Dragon.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Dragon.cpp
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Dragon.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Global.h
@@ -40,6 +43,7 @@ CMakeFiles/war2_0.dir/Global.cpp.o: ../Global.h
 
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Iceman.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Iceman.cpp
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Iceman.h
@@ -49,6 +53,7 @@ CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Lion.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Lion.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Lion.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Lion.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Lion.cpp.o: ../Lion.cpp
 CMakeFiles/war2_0.dir/Lion.cpp.o: ../Lion.h
@@ -58,6 +63,7 @@ CMakeFiles/war2_0.dir/Lion.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Ninja.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Ninja.cpp
 CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Ninja.h
@@ -67,6 +73,7 @@ CMakeFiles/war2_0.dir/Ninja.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Sword.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Sword.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Sword.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Sword.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Sword.cpp.o: ../Sword.cpp
 CMakeFiles/war2_0.dir/Sword.cpp.o: ../Sword.h
@@ -75,6 +82,7 @@ CMakeFiles/war2_0.dir/Sword.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Warriors.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Warriors.cpp
@@ -83,6 +91,7 @@ CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Weapon.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Warriors.h
@@ -91,6 +100,7 @@ CMakeFiles/war2_0.dir/Weapon.cpp.o: ../Weapon.h
 
 CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/Wolf.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Warriors.h
@@ -100,6 +110,7 @@ CMakeFiles/war2_0.dir/Wolf.cpp.o: ../Wolf.h
 
 CMakeFiles/war2_0.dir/crops.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/crops.cpp.o: ../Bomb.h
+CMakeFiles/war2_0.dir/crops.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/crops.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/crops.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/crops.cpp.o: ../Warriors.h

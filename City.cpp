@@ -3,6 +3,7 @@
 //
 
 #include "City.h"
+#include "Warriors.h"
 
 void City::produce_lives() {
     lives+=10;
@@ -23,18 +24,19 @@ int City::get_lives() {
 void City::attack() {
     if((index%2==1)||(flag==1))
     {
-        b->attack(r);
+        r->attack(b);
     }
     else
     {
-        r->attack(b);
+        b->attack(r);
     }
 
 }
 
 
 
-City::City(int index) : index(index) {
+City::City(int index_) {
+    index=index_;
     r=NULL;
     b=NULL;
     flag=0;
@@ -102,4 +104,8 @@ void City::delete_b() {
         b=NULL;
     }
 
+}
+
+int City::get_index() {
+    return index;
 }

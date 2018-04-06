@@ -11,17 +11,20 @@
 #include "Bomb.h"
 #include "Arrow.h"
 #include "Global.h"
+#include "City.h"
 
 
 
 class Warriors {
 
 protected:
+    int attack_; //士兵的攻击值
     int serial_num;   //编号
     int strength;     //生命值
     Weapon** weapon; //武器
     string name; //武士名称
     string crops; //士兵所属的阵营
+
 
 public:
     Warriors(int serial_num, int strength);
@@ -30,6 +33,7 @@ public:
     virtual void attack(Warriors *p); //攻击函数
     int get_lives();
     virtual void cout_born();
+    virtual void cout_march(City *c);  //输出前进的消息
     virtual bool run_away();
     virtual ~Warriors();
 

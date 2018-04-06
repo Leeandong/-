@@ -32,6 +32,8 @@ Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : 
     morale=remain_lives/warriors_strength[0];
     name="dragon";
     crops=crops_;
+    attack_=warriors_attack[0];
+
 
 
 }

@@ -133,6 +133,19 @@ int main()
     }
     cities[0]->add_r(red.get());
     cities[N-1]->add_b(blue.get());
+    for(int i=0;i<N;i++)
+    {
+       if(cities[i]->get_r())
+       {
+           cities[i]->get_r()->cout_march(cities[i]);
+       }
+       if(cities[i]->get_b())
+       {
+           cities[i]->get_b()->cout_march(cities[i]);
+       }
+
+    }
+    minutes+=10;
 
 
 

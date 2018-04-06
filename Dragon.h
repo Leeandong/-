@@ -22,7 +22,6 @@ public:
     virtual void Hurted(int a);  //受伤函数
     virtual void attack(Warriors *p); //攻击函数
     virtual ~Dragon();
-
     virtual void cout_born();
 
 };

@@ -53,5 +53,14 @@ bool Warriors::run_away() {
     return false;
 }
 
+void Warriors::cout_march(City *c) {
+    //000:10 red iceman 1 marched to city 1 with 20 elements and force 30
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" march to city "
+         <<c->get_index()<<" with "<<strength<<" elements"<<" and force "<<attack_<<endl;
+
+}
+
 
 

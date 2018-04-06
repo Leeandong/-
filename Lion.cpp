@@ -8,6 +8,7 @@ Lion::Lion(int serial_num, int strength,string& crops_,int loyalty_):Warriors(se
      name="lion";
      crops=crops_;
      loyalty=loyalty_;
+    attack_=warriors_attack[3];
 }
 
 void Lion::fightback(Warriors *p) {
