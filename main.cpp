@@ -1,7 +1,7 @@
 //#include <iostream>
 //#include<string>
 //#include "Global.h"
-//#include "crops.h"
+//#include "Crops.h"
 //
 //using namespace std;
 //
@@ -20,8 +20,8 @@
 //        {
 //            cin>>warriors_strength[j];
 //        };
-//        crops blue(lives,blue_sequence,a);
-//        crops red(lives,red_sequence,b);
+//        Crops blue(lives,blue_sequence,a);
+//        Crops red(lives,red_sequence,b);
 //        cout<<"Case:"<<i<<endl;
 //        while(!(red.if_stop()&&blue.if_stop()))
 //        {
@@ -47,12 +47,12 @@
 # include "Lion.h"
 # include "Wolf.h"
 #include "Dragon.h"
-#include "crops.h"
+#include "Crops.h"
 #include "City.h"
 #include "Ninja.h"
 #include "Iceman.h"
 
-void creat_warriors(crops&c)  //制造士兵 传入1制造红方的士兵，传入0制造蓝方的士兵
+void creat_warriors(Crops&c)  //制造士兵 传入1制造红方的士兵，传入0制造蓝方的士兵
 
 {
     Warriors* temp=NULL;
@@ -105,11 +105,11 @@ void creat_warriors(crops&c)  //制造士兵 传入1制造红方的士兵，传�
 int main()
 {
     int lives=6;  //初始时候赋给司令部的数据
-    int N=1; //两座司令部之间的城市个数
+    int N=3; //两座司令部之间的城市个数
     string a="blue";
     string b="red";
-    crops blue(lives,blue_sequence,a);
-    crops red(lives,red_sequence,b);
+    Crops blue(lives,blue_sequence,a);
+    Crops red(lives,red_sequence,b);
     City ** cities=new City*[N];
     for(int i=0;i<N;i++)
     {
@@ -145,7 +145,46 @@ int main()
        }
 
     }
-    minutes+=10;
+    minutes+=10;//第20分钟城市生产生命元
+    for(int i=0;i<N;i++)
+    {
+        cities[i]->produce_lives();
+    }
+    minutes+=10;//第30分钟若城市中仅有一个武士，获得所有的生命元
+    for(int i=0;i<N;i++)
+    {
+        if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
+        {
+            blue.add_lives(cities[i]->get_lives());
+        }
+        if((cities[i]->get_b()==NULL)&&(cities[i]->get_r()))
+        {
+            red.add_lives(cities[i]->get_lives());
+        }
+    }
+    minutes+=5; //第35分钟拥有arrows的士兵放箭
+    for(int i=1;i<N;i++)
+    {
+        if(cities[i]->get_b())
+        {
+            cities[i-1]->get_r()->Archery(cities[i]->get_b());
+            if(cities[i]->get_b()->get_lives()<=0)
+            {
+                cities[i]->delete_b();
+            }
+        }
+        if(cities[N-i-1]->get_r())
+        {
+            cities[N-i]->get_b()->Archery(cities[N-i-1]->get_r());
+            if(cities[N-i-1]->get_r()->get_lives()<=0)
+            {
+                cities[i]->delete_r();
+            }
+        }
+    }
+
+
+
 
 
 

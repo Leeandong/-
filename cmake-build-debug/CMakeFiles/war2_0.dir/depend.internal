@@ -28,6 +28,16 @@ CMakeFiles/war2_0.dir/City.cpp.o
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Sword.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Weapon.h
+CMakeFiles/war2_0.dir/Crops.cpp.o
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Arrow.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Bomb.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.cpp
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Sword.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Weapon.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Arrow.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Bomb.h
@@ -108,20 +118,11 @@ CMakeFiles/war2_0.dir/Wolf.cpp.o
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Weapon.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Wolf.cpp
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Wolf.h
-CMakeFiles/war2_0.dir/crops.cpp.o
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Arrow.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Bomb.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Sword.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Weapon.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.cpp
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.h
 CMakeFiles/war2_0.dir/main.cpp.o
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Arrow.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Bomb.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
+ /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Dragon.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Iceman.h
@@ -131,5 +132,4 @@ CMakeFiles/war2_0.dir/main.cpp.o
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Weapon.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Wolf.h
- /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.h
  /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/main.cpp

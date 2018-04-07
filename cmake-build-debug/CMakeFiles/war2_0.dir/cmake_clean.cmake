@@ -2,7 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/war2_0.dir/main.cpp.o"
   "CMakeFiles/war2_0.dir/Warriors.cpp.o"
   "CMakeFiles/war2_0.dir/Dragon.cpp.o"
-  "CMakeFiles/war2_0.dir/crops.cpp.o"
+  "CMakeFiles/war2_0.dir/Crops.cpp.o"
   "CMakeFiles/war2_0.dir/Ninja.cpp.o"
   "CMakeFiles/war2_0.dir/Iceman.cpp.o"
   "CMakeFiles/war2_0.dir/Lion.cpp.o"

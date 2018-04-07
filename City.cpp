@@ -18,17 +18,17 @@ void City::set_flag(int color) {
 int City::get_lives() {
     int temp=lives;
     lives=0;
-    return lives;
+    return temp;
 }
 
 void City::attack() {
     if((index%2==1)||(flag==1))
     {
-        r->attack(b);
+        r->Attack(b);
     }
     else
     {
-        b->attack(r);
+        b->Attack(r);
     }
 
 }

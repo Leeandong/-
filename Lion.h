@@ -18,7 +18,7 @@ public:
     Lion(int serial_num, int strength,string & crops_,int loyalty_);
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
-    virtual void attack(Warriors *p); //攻击函数
+    virtual void Attack(Warriors *p); //攻击函数
 
     virtual void cout_born();
     virtual bool run_away(); //忠诚度低于一定值时逃跑

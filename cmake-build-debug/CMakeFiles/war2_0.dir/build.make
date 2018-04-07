@@ -129,28 +129,28 @@ CMakeFiles/war2_0.dir/Dragon.cpp.o.provides: CMakeFiles/war2_0.dir/Dragon.cpp.o.
 CMakeFiles/war2_0.dir/Dragon.cpp.o.provides.build: CMakeFiles/war2_0.dir/Dragon.cpp.o
 
 
-CMakeFiles/war2_0.dir/crops.cpp.o: CMakeFiles/war2_0.dir/flags.make
-CMakeFiles/war2_0.dir/crops.cpp.o: ../crops.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/war2_0.dir/crops.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/war2_0.dir/crops.cpp.o -c /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.cpp
+CMakeFiles/war2_0.dir/Crops.cpp.o: CMakeFiles/war2_0.dir/flags.make
+CMakeFiles/war2_0.dir/Crops.cpp.o: ../Crops.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/war2_0.dir/Crops.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/war2_0.dir/Crops.cpp.o -c /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.cpp
 
-CMakeFiles/war2_0.dir/crops.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/war2_0.dir/crops.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.cpp > CMakeFiles/war2_0.dir/crops.cpp.i
+CMakeFiles/war2_0.dir/Crops.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/war2_0.dir/Crops.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.cpp > CMakeFiles/war2_0.dir/Crops.cpp.i
 
-CMakeFiles/war2_0.dir/crops.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/war2_0.dir/crops.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.cpp -o CMakeFiles/war2_0.dir/crops.cpp.s
+CMakeFiles/war2_0.dir/Crops.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/war2_0.dir/Crops.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.cpp -o CMakeFiles/war2_0.dir/Crops.cpp.s
 
-CMakeFiles/war2_0.dir/crops.cpp.o.requires:
+CMakeFiles/war2_0.dir/Crops.cpp.o.requires:
 
-.PHONY : CMakeFiles/war2_0.dir/crops.cpp.o.requires
+.PHONY : CMakeFiles/war2_0.dir/Crops.cpp.o.requires
 
-CMakeFiles/war2_0.dir/crops.cpp.o.provides: CMakeFiles/war2_0.dir/crops.cpp.o.requires
-	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/crops.cpp.o.provides.build
-.PHONY : CMakeFiles/war2_0.dir/crops.cpp.o.provides
+CMakeFiles/war2_0.dir/Crops.cpp.o.provides: CMakeFiles/war2_0.dir/Crops.cpp.o.requires
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Crops.cpp.o.provides.build
+.PHONY : CMakeFiles/war2_0.dir/Crops.cpp.o.provides
 
-CMakeFiles/war2_0.dir/crops.cpp.o.provides.build: CMakeFiles/war2_0.dir/crops.cpp.o
+CMakeFiles/war2_0.dir/Crops.cpp.o.provides.build: CMakeFiles/war2_0.dir/Crops.cpp.o
 
 
 CMakeFiles/war2_0.dir/Ninja.cpp.o: CMakeFiles/war2_0.dir/flags.make
@@ -398,7 +398,7 @@ war2_0_OBJECTS = \
 "CMakeFiles/war2_0.dir/main.cpp.o" \
 "CMakeFiles/war2_0.dir/Warriors.cpp.o" \
 "CMakeFiles/war2_0.dir/Dragon.cpp.o" \
-"CMakeFiles/war2_0.dir/crops.cpp.o" \
+"CMakeFiles/war2_0.dir/Crops.cpp.o" \
 "CMakeFiles/war2_0.dir/Ninja.cpp.o" \
 "CMakeFiles/war2_0.dir/Iceman.cpp.o" \
 "CMakeFiles/war2_0.dir/Lion.cpp.o" \
@@ -416,7 +416,7 @@ war2_0_EXTERNAL_OBJECTS =
 war2_0: CMakeFiles/war2_0.dir/main.cpp.o
 war2_0: CMakeFiles/war2_0.dir/Warriors.cpp.o
 war2_0: CMakeFiles/war2_0.dir/Dragon.cpp.o
-war2_0: CMakeFiles/war2_0.dir/crops.cpp.o
+war2_0: CMakeFiles/war2_0.dir/Crops.cpp.o
 war2_0: CMakeFiles/war2_0.dir/Ninja.cpp.o
 war2_0: CMakeFiles/war2_0.dir/Iceman.cpp.o
 war2_0: CMakeFiles/war2_0.dir/Lion.cpp.o
@@ -440,7 +440,7 @@ CMakeFiles/war2_0.dir/build: war2_0
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/main.cpp.o.requires
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Warriors.cpp.o.requires
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Dragon.cpp.o.requires
-CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/crops.cpp.o.requires
+CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Crops.cpp.o.requires
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Ninja.cpp.o.requires
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Iceman.cpp.o.requires
 CMakeFiles/war2_0.dir/requires: CMakeFiles/war2_0.dir/Lion.cpp.o.requires

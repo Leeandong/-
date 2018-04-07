@@ -29,7 +29,7 @@ Ninja::Ninja(int serial_num, int strength,string& crops_) : Warriors(serial_num,
 
     }
     crops=crops_;
-    attack_=warriors_attack[1];
+    attack=warriors_attack[1];
 }
 
 
@@ -52,8 +52,8 @@ void Ninja::Hurted(int a) {
 
 }
 
-void Ninja::attack(Warriors *p) {
-    Warriors::attack(p);
+void Ninja::Attack(Warriors *p) {
+    Warriors::Attack(p);
     p->Hurted(warriors_attack[1]);
     p->fightback(this);
 

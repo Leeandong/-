@@ -2,13 +2,13 @@
 // Created by 李安东 on 2018/3/11.
 //
 
-#include "crops.h"
+#include "Crops.h"
 #include <iostream>
 #include <iomanip>
 #include "Global.h"
 
 
-crops::crops(int lives, int *p_warriors, const string &name
+Crops::Crops(int lives, int *p_warriors, const string &name
              ) : lives(lives), p_warriors(p_warriors),
                                         name(name)  {
     for(int i=0;i<5;i++)
@@ -24,7 +24,7 @@ crops::crops(int lives, int *p_warriors, const string &name
 }
 
 
-int crops::which_to_creat() {
+int Crops::which_to_creat() {
     int i;
     for (i=0;i<5;i++)
     {
@@ -45,32 +45,32 @@ int crops::which_to_creat() {
     }
 }
 
-int crops::get_num() {
+int Crops::get_num() {
     return num;
 }
 
 
-int *crops::get_num_warriors() {
+int *Crops::get_num_warriors() {
     return num_warriors;
 }
 
-int crops::get_lives() {
+int Crops::get_lives() {
     return lives;
 }
 
 
-Warriors *crops::get() {
+Warriors *Crops::get() {
     Warriors* temp=warriors;
     warriors=NULL;
     return temp;
 }
 
-void crops::add(Warriors *w) {
+void Crops::add(Warriors *w) {
     warriors=w;
 
 }
 
-void crops::cout_stop() {
+void Crops::cout_stop() {
 
     cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
@@ -80,7 +80,7 @@ void crops::cout_stop() {
 
 
 
-void crops::delete_warriors() {
+void Crops::delete_warriors() {
     if(warriors)
     {
         delete(warriors);
@@ -88,14 +88,18 @@ void crops::delete_warriors() {
 
 }
 
-string &crops::get_name() {
+string &Crops::get_name() {
     return name;
 }
 
-crops::~crops() {
+Crops::~Crops() {
     if(warriors)
         delete(warriors);
 
+}
+
+void Crops::add_lives(int i) {
+    lives+=i;
 }
 
 

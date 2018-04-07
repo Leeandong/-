@@ -25,14 +25,11 @@ void Warriors::fightback(Warriors *p) {
 
 }
 
-void Warriors::attack(Warriors *p) {
-    for(int i=0;i<3;i++)
-    {
-        if(weapon[i])
-        {
-            weapon[i]->Attack(p);
-        }
+void Warriors::Attack(Warriors *p) {
 
+    if(weapon[1])
+    {
+        weapon[1]->Attack(p);
     }
 
 }
@@ -58,9 +55,39 @@ void Warriors::cout_march(City *c) {
     cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
     cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" march to city "
-         <<c->get_index()<<" with "<<strength<<" elements"<<" and force "<<attack_<<endl;
+         <<c->get_index()<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
 }
+
+void Warriors::Archery(Warriors *w) {
+    if(weapon[1])
+    {
+        weapon[1]->Attack(w);
+    }
+
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot ";
+    if(w->get_lives()<=0)
+    {
+        w->cout_info();
+    }
+    else
+    {
+        cout<<endl;
+    }
+
+
+}
+
+void Warriors::cout_info() {
+
+    cout << crops << ' ' <<name<<' '<< serial_num<<endl;
+
+
+}
+
+
 
 
 

@@ -40,6 +40,22 @@ Warriors.h
 
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
 
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.cpp
+Crops.h
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.h
+iostream
+-
+iomanip
+-
+Global.h
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
+
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.h
+string
+-
+Warriors.h
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
+
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Dragon.cpp
 iostream
 -
@@ -158,22 +174,6 @@ string
 Global.h
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
 
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.cpp
-crops.h
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.h
-iostream
--
-iomanip
--
-Global.h
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Global.h
-
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.h
-string
--
-Warriors.h
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Warriors.h
-
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/main.cpp
 iostream
 -
@@ -185,8 +185,8 @@ Wolf.h
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Wolf.h
 Dragon.h
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Dragon.h
-crops.h
-/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/crops.h
+Crops.h
+/Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/Crops.h
 City.h
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
 Ninja.h

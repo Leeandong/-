@@ -204,6 +204,33 @@ City.cpp.s:
 	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/City.cpp.s
 .PHONY : City.cpp.s
 
+Crops.o: Crops.cpp.o
+
+.PHONY : Crops.o
+
+# target to build an object file
+Crops.cpp.o:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Crops.cpp.o
+.PHONY : Crops.cpp.o
+
+Crops.i: Crops.cpp.i
+
+.PHONY : Crops.i
+
+# target to preprocess a source file
+Crops.cpp.i:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Crops.cpp.i
+.PHONY : Crops.cpp.i
+
+Crops.s: Crops.cpp.s
+
+.PHONY : Crops.s
+
+# target to generate assembly for a file
+Crops.cpp.s:
+	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Crops.cpp.s
+.PHONY : Crops.cpp.s
+
 Dragon.o: Dragon.cpp.o
 
 .PHONY : Dragon.o
@@ -447,33 +474,6 @@ Wolf.cpp.s:
 	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/Wolf.cpp.s
 .PHONY : Wolf.cpp.s
 
-crops.o: crops.cpp.o
-
-.PHONY : crops.o
-
-# target to build an object file
-crops.cpp.o:
-	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/crops.cpp.o
-.PHONY : crops.cpp.o
-
-crops.i: crops.cpp.i
-
-.PHONY : crops.i
-
-# target to preprocess a source file
-crops.cpp.i:
-	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/crops.cpp.i
-.PHONY : crops.cpp.i
-
-crops.s: crops.cpp.s
-
-.PHONY : crops.s
-
-# target to generate assembly for a file
-crops.cpp.s:
-	$(MAKE) -f CMakeFiles/war2_0.dir/build.make CMakeFiles/war2_0.dir/crops.cpp.s
-.PHONY : crops.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -519,6 +519,9 @@ help:
 	@echo "... City.o"
 	@echo "... City.i"
 	@echo "... City.s"
+	@echo "... Crops.o"
+	@echo "... Crops.i"
+	@echo "... Crops.s"
 	@echo "... Dragon.o"
 	@echo "... Dragon.i"
 	@echo "... Dragon.s"
@@ -546,9 +549,6 @@ help:
 	@echo "... Wolf.o"
 	@echo "... Wolf.i"
 	@echo "... Wolf.s"
-	@echo "... crops.o"
-	@echo "... crops.i"
-	@echo "... crops.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

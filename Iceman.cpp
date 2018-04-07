@@ -24,7 +24,7 @@ Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_n
         }
 
     }
-    attack_=warriors_attack[2];
+    attack=warriors_attack[2];
 }
 
 Iceman::~Iceman() {
@@ -37,7 +37,7 @@ Iceman::~Iceman() {
 }
 
 void Iceman::fightback(Warriors *p) {
-    Warriors::attack(p);
+    Warriors::Attack(p);
     p->Hurted(int(warriors_attack[2]));
 }
 
@@ -45,8 +45,8 @@ void Iceman::Hurted(int a) {
     Warriors::Hurted(a);
 }
 
-void Iceman::attack(Warriors *p) {
-    Warriors::attack(p);
+void Iceman::Attack(Warriors *p) {
+    Warriors::Attack(p);
     p->Hurted(warriors_attack[2]);
     p->fightback(this);
 }

@@ -32,7 +32,7 @@ Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : 
     morale=remain_lives/warriors_strength[0];
     name="dragon";
     crops=crops_;
-    attack_=warriors_attack[0];
+    attack=warriors_attack[0];
 
 
 
@@ -48,7 +48,7 @@ Dragon::~Dragon() {
 }
 
 void Dragon::fightback(Warriors *p) {
-    Warriors::attack(p);
+    Warriors::Attack(p);
     p->Hurted(int(warriors_attack[0]/2));
 
 }
@@ -58,8 +58,8 @@ void Dragon::Hurted(int a) {
 
 }
 
-void Dragon::attack(Warriors *p) {
-    Warriors::attack(p);
+void Dragon::Attack(Warriors *p) {
+    Warriors::Attack(p);
     p->Hurted(warriors_attack[0]);
     p->fightback(this);
     if((strength>0)&&(morale>0.8))
@@ -74,5 +74,7 @@ void Dragon::cout_born() {
     Warriors::cout_born();
     cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
 }
+
+
 
 

@@ -8,11 +8,11 @@ Lion::Lion(int serial_num, int strength,string& crops_,int loyalty_):Warriors(se
      name="lion";
      crops=crops_;
      loyalty=loyalty_;
-    attack_=warriors_attack[3];
+    attack=warriors_attack[3];
 }
 
 void Lion::fightback(Warriors *p) {
-    Warriors::attack(p);
+    Warriors::Attack(p);
     p->Hurted(int(warriors_attack[3]/2));
 
 }
@@ -21,8 +21,8 @@ void Lion::Hurted(int a) {
     Warriors::Hurted(a);
 }
 
-void Lion::attack(Warriors *p) {
-    Warriors::attack(p);
+void Lion::Attack(Warriors *p) {
+    Warriors::Attack(p);
     p->Hurted(warriors_attack[3]);
     p->fightback(this);
 

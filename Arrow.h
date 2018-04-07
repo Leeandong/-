@@ -15,7 +15,7 @@ class Arrow : public Weapon{
     string name;
 public:
     Arrow();
-    void Attack(Warriors *p) override;
+    void Attack(Warriors *p) ;
 
 };
 
