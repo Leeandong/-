@@ -16,6 +16,7 @@ class Arrow : public Weapon{
 public:
     Arrow();
     void Attack(Warriors *p) ;
+    int get_remain_times();
 
 };
 

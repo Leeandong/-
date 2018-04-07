@@ -15,6 +15,6 @@ void Arrow::Attack(Warriors *p) {
     }
 }
 
-//int Arrow::get_remain_times() {
-//    return remains;
-//}
+int Arrow::get_remain_times() {
+    return remains;
+}

@@ -21,7 +21,9 @@ protected:
     int attack; //士兵的攻击值
     int serial_num;   //编号
     int strength;     //生命值
-    Weapon** weapon; //武器
+    Arrow * arrow;
+    Bomb *bomb;
+    Sword *sword;
     string name; //武士名称
     string crops; //士兵所属的阵营
 
@@ -37,6 +39,10 @@ public:
     virtual void cout_march(City *c);  //输出前进的消息
     virtual bool run_away();
     virtual void Archery(Warriors * w); //射箭
+    virtual int get_attack_value(); //返回攻击值
+    virtual int get_fightback_value(); //返回反击值
+    bool before_use_bomb(Warriors *w); //是否先使用炸弹
+    bool after_use_bomb(Warriors *w); //是否后使用炸弹
     virtual ~Warriors();
 
 

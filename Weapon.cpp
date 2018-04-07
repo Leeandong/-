@@ -7,5 +7,9 @@
 
 Weapon::Weapon(int attack) : attack(attack) {}
 
+int Weapon::get_attack() {
+    return attack;
+}
+
 
 

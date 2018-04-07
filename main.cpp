@@ -52,7 +52,7 @@
 #include "Ninja.h"
 #include "Iceman.h"
 
-void creat_warriors(Crops&c)  //制造士兵 传入1制造红方的士兵，传入0制造蓝方的士兵
+void creat_warriors(Crops&c)  //制造士兵
 
 {
     Warriors* temp=NULL;
@@ -92,20 +92,14 @@ void creat_warriors(Crops&c)  //制造士兵 传入1制造红方的士兵，传�
         temp->cout_born();
         c.add(temp);
     }
-    else
-    {
-        c.cout_stop();
-    }
-
-
 
 }
 
 
 int main()
 {
-    int lives=6;  //初始时候赋给司令部的数据
-    int N=3; //两座司令部之间的城市个数
+    int lives=20;  //初始时候赋给司令部的数据
+    int N=1; //两座司令部之间的城市个数
     string a="blue";
     string b="red";
     Crops blue(lives,blue_sequence,a);
@@ -115,74 +109,141 @@ int main()
     {
         cities[i] = new City(i+1);
     }
+    hours=0;
     minutes=0; //第0分钟制造士兵
     creat_warriors(red);
     creat_warriors(blue);
-    minutes+=5;  //第5分钟lion逃跑
-    for(int i=0;i<N;i++)
+    while(hours<3)
     {
-        cities[i]->delete_run();
-    }
-    minutes+=5; //第10分钟武士前进
-    cities[N-1]->delete_r();
-    cities[0]->delete_b();
-    for(int i=0;i<N-1;i++)
-    {
-        cities[N-1-i]->add_r(cities[N-i-2]->get_r());
-        cities[i]->add_b(cities[i+1]->get_b());
-    }
-    cities[0]->add_r(red.get());
-    cities[N-1]->add_b(blue.get());
-    for(int i=0;i<N;i++)
-    {
-       if(cities[i]->get_r())
-       {
-           cities[i]->get_r()->cout_march(cities[i]);
-       }
-       if(cities[i]->get_b())
-       {
-           cities[i]->get_b()->cout_march(cities[i]);
-       }
-
-    }
-    minutes+=10;//第20分钟城市生产生命元
-    for(int i=0;i<N;i++)
-    {
-        cities[i]->produce_lives();
-    }
-    minutes+=10;//第30分钟若城市中仅有一个武士，获得所有的生命元
-    for(int i=0;i<N;i++)
-    {
-        if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
+        minutes+=5;  //第5分钟lion逃跑
+        for(int i=0;i<N;i++)
         {
-            blue.add_lives(cities[i]->get_lives());
+            cities[i]->delete_run();
         }
-        if((cities[i]->get_b()==NULL)&&(cities[i]->get_r()))
+        minutes+=5; //第10分钟武士前进
+        if(cities[N-1]->get_r())  //如果某方司令部被攻陷，则结束程序
         {
-            red.add_lives(cities[i]->get_lives());
-        }
-    }
-    minutes+=5; //第35分钟拥有arrows的士兵放箭
-    for(int i=1;i<N;i++)
-    {
-        if(cities[i]->get_b())
-        {
-            cities[i-1]->get_r()->Archery(cities[i]->get_b());
-            if(cities[i]->get_b()->get_lives()<=0)
+            blue.add_enemy();
+            if(blue.lose())
             {
-                cities[i]->delete_b();
+                for(int i=0;i<N;i++)
+                {
+                    delete cities[i];
+                }
+                delete []cities;
+                return 0;
+            }
+
+        }
+        cities[N-1]->delete_r();
+        if(cities[0]->get_b())
+        {
+            red.add_enemy();
+            if(red.lose())
+            {
+                for(int i=0;i<N;i++)
+                {
+                    delete cities[i];
+                }
+                delete []cities;
+                return 0;
+            }
+
+        }
+        cities[0]->delete_b();
+        for(int i=0;i<N-1;i++)
+        {
+            cities[N-1-i]->add_r(cities[N-i-2]->get_r());
+            cities[i]->add_b(cities[i+1]->get_b());
+        }
+        cities[0]->add_r(red.get());
+        cities[N-1]->add_b(blue.get());
+        for(int i=0;i<N;i++)
+        {
+            if(cities[i]->get_r())
+            {
+                cities[i]->get_r()->cout_march(cities[i]);
+            }
+            if(cities[i]->get_b())
+            {
+                cities[i]->get_b()->cout_march(cities[i]);
+            }
+
+        }
+        minutes+=10;//第20分钟城市生产生命元
+        for(int i=0;i<N;i++)
+        {
+            cities[i]->produce_lives();
+        }
+        minutes+=10;//第30分钟若城市中仅有一个武士，获得所有的生命元
+        for(int i=0;i<N;i++)
+        {
+            if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
+            {
+                blue.add_lives(cities[i]->get_lives());
+            }
+            if((cities[i]->get_b()==NULL)&&(cities[i]->get_r()))
+            {
+                red.add_lives(cities[i]->get_lives());
             }
         }
-        if(cities[N-i-1]->get_r())
+        minutes+=5; //第35分钟拥有arrows的士兵放箭
+        for(int i=1;i<N;i++)
         {
-            cities[N-i]->get_b()->Archery(cities[N-i-1]->get_r());
-            if(cities[N-i-1]->get_r()->get_lives()<=0)
+            if(cities[i]->get_b())
             {
-                cities[i]->delete_r();
+                cities[i-1]->get_r()->Archery(cities[i]->get_b());
+                if(cities[i]->get_b()->get_lives()<=0)
+                {
+                    cities[i]->delete_b();
+                }
+            }
+            if(cities[N-i-1]->get_r())
+            {
+                cities[N-i]->get_b()->Archery(cities[N-i-1]->get_r());
+                if(cities[N-i-1]->get_r()->get_lives()<=0)
+                {
+                    cities[i]->delete_r();
+                }
             }
         }
-    }
+        minutes+=3; //第38分钟拥有bombs的勇士自爆
+        {
+            for(int i=0;i<N;i++)
+            {
+                cities[i]->self_bursting();
+            }
+        }
+        minutes+=2; //第四十分钟两个武士之间相互战斗
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    hours++;
+    }
 
 
 

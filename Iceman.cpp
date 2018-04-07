@@ -11,16 +11,16 @@ Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_n
     switch (tmp)
     {
         case 0: {
-            weapon[0]= new Sword(int(warriors_attack[2]*0.2));
+            sword= new Sword(int(warriors_attack[0]*0.2));
             break;
         }
         case 1: {
-            weapon[1]= new Arrow();
+            arrow= new Arrow();
             break;
         }
         default:
         {
-            weapon[2]= new Bomb();
+            bomb= new Bomb();
         }
 
     }
@@ -28,11 +28,12 @@ Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_n
 }
 
 Iceman::~Iceman() {
-    for(int i=0;i<3;i++)
-    {
-        if(weapon[i])
-            delete(weapon[i]);
-    }
+    if(sword)
+        delete(sword);
+    if(arrow)
+        delete(arrow);
+    if(bomb)
+        delete(bomb);
 
 }
 

@@ -18,7 +18,7 @@ private:
 
 public:
     Sword(int attack_);
-    void Attack(Warriors *p) override;
+    void Attack(Warriors *p);
 };
 
 

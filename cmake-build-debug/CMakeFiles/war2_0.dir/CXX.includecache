@@ -33,6 +33,8 @@ string
 -
 
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.cpp
+iostream
+-
 City.h
 /Users/liandong/Documents/CPP/C++程序设计作业/week6/war2.0/City.h
 Warriors.h

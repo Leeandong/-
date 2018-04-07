@@ -12,10 +12,12 @@ class Warriors;
 
 
 class Weapon {
-public:
+protected:
     int attack; //攻击值
+public:
     Weapon(int attack_);
     virtual void Attack(Warriors* p)=0;
+    int get_attack(); //获得攻击力的值
 
 };
 

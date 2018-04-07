@@ -12,19 +12,19 @@ Ninja::Ninja(int serial_num, int strength,string& crops_) : Warriors(serial_num,
     switch (tmp)
     {
         case 0: {
-            weapon[0]= new Sword(int(warriors_attack[1]*0.2));
-            weapon[1]= new Arrow();
+            sword= new Sword(int(warriors_attack[0]*0.2));
+            arrow= new Arrow();
             break;
         }
         case 1: {
-            weapon[1]= new Arrow();
-            weapon[2]= new Bomb();
+            arrow= new Arrow();
+            bomb= new Bomb();
             break;
         }
         default:
         {
-            weapon[2]= new Bomb();
-            weapon[0]= new Sword(int(strength*0.2));
+            bomb= new Bomb();
+            sword= new Sword(int(strength*0.2));
         }
 
     }
@@ -35,11 +35,12 @@ Ninja::Ninja(int serial_num, int strength,string& crops_) : Warriors(serial_num,
 
 
 Ninja::~Ninja() {
-    for(int i=0;i<3;i++)
-    {
-        if(weapon[i])
-            delete(weapon[i]);
-    }
+    if(sword)
+        delete(sword);
+    if(arrow)
+        delete(arrow);
+    if(bomb)
+        delete(bomb);
 
 }
 void Ninja::fightback(Warriors *p) {
@@ -58,4 +59,8 @@ void Ninja::Attack(Warriors *p) {
     p->fightback(this);
 
 
+}
+
+int Ninja::get_fightback_value() {
+   return 0;
 }

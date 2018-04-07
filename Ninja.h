@@ -18,12 +18,16 @@ public:
     virtual ~Ninja();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
-    virtual void Attack(Warriors *p); //攻击函数
+    virtual void Attack(Warriors *p);
+
+    virtual int get_fightback_value() ;
+    //攻击函数
 
 
 
 
 };
+
 
 
 #endif //WAR2_0_NINJA_H

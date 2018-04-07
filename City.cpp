@@ -2,6 +2,7 @@
 // Created by 李安东 on 2018/3/30.
 //
 
+#include <iostream>
 #include "City.h"
 #include "Warriors.h"
 
@@ -108,4 +109,89 @@ void City::delete_b() {
 
 int City::get_index() {
     return index;
+}
+
+
+
+void City::self_bursting() {
+
+    if((index%2==1)||(flag==1))  //红方先进攻
+    {
+        if(r->before_use_bomb(b))
+        {
+//            000:38 blue dragon 1 used a bomb and killed red lion 7
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << hours << ':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ' ;
+            r->cout_info();
+            cout<<" use a bomb and killed ";
+            b->cout_info();
+            cout<<endl;
+          this->delete_b();
+          this->delete_r();
+
+        }
+        if(b->after_use_bomb(r))
+        {
+//           000:38 blue dragon 1 used a bomb and killed red lion 7
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << hours << ':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ';
+            b->cout_info();
+            cout<<" use a bomb and killed ";
+            r->cout_info();
+            cout<<endl;
+            this->delete_b();
+            this->delete_r();
+
+        }
+
+    }
+    if((index%2==0)||(flag==0))
+    {
+
+        if(b->before_use_bomb(r))
+        {
+//            000:38 blue dragon 1 used a bomb and killed red lion 7
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << hours << ':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ' ;
+            b->cout_info();
+            cout<<" use a bomb and killed ";
+            r->cout_info();
+            cout<<endl;
+            this->delete_b();
+            this->delete_r();
+
+        }
+        if(r->after_use_bomb(b))
+        {
+//           000:38 blue dragon 1 used a bomb and killed red lion 7
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << hours << ':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ';
+            r->cout_info();
+            cout<<" use a bomb and killed ";
+            b->cout_info();
+            cout<<endl;
+            this->delete_b();
+            this->delete_r();
+
+        }
+
+    }
+
+
 }

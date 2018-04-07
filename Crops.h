@@ -26,6 +26,7 @@ private:
     string name;   //crops的名字
     Warriors * warriors;  //挂着当前出现的武士
     int index; //当前联盟中停留在指挥部中的士兵个数
+    int num_enemy; //当前联盟中敌人的数量
 
 
 
@@ -38,9 +39,9 @@ public:
     void add_lives(int i); //获取生命元
     void add(Warriors* w); //添加当前产生出来的士兵
     string & get_name(); //获得当前联盟的名称
-    Warriors* get(); //获得联盟中停下的士兵,并将指针置为空指针
-    void cout_stop(); //输出停止信息
-    void delete_warriors();
+    Warriors* get(); //获得联盟中停下的士兵,并将指针置为空指针r
+    void add_enemy(); //联盟中敌人的数目加1；
+    bool lose(); //当前是否被攻克；
 
     virtual ~Crops();
     //删除主函数中new的warriors
