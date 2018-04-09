@@ -6,10 +6,19 @@
 #include <iostream>
 
 
-Warriors::Warriors(int serial_num, int strength) : serial_num(serial_num), strength(strength) {
+Warriors::Warriors(int serial_num, int strength,string & crops_) : serial_num(serial_num), strength(strength) ,crops(crops_){
     sword = NULL;
     arrow = NULL;
     bomb =NULL;
+    if(crops_=="red")
+    {
+        city_num=-1;
+    }
+    else
+    {
+        city_num=N;
+    }
+
 }
 
 void Warriors::Hurted(int a){strength-=a;}
@@ -20,10 +29,39 @@ Warriors::~Warriors() {
 }
 
 void Warriors::fightback(Warriors *p) {
+    //            001:40 blue dragon 2 fought back against
+//            red lion 2 in city 1
+    if(strength>0)
+    {
+        if(sword)
+        {
+            sword->Attack(p);
+            p->Hurted(int(attack/2));
+        }
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout<<hours<<':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" fought back against ";
+        p->cout_info();
+        cout<<" in city "<< index<<endl;
+
+    }
 
 }
 
 void Warriors::Attack(Warriors *p) {
+//    000:40 red iceman 1 attacked blue lion 1 in
+//    city 1 with 20 elements and force 30
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" attack ";
+    p->cout_info();
+    cout<< " in city "<<city_num<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
     if(sword)
     {
@@ -141,6 +179,54 @@ bool Warriors::after_use_bomb(Warriors *w) {
         return false;
     }
 }
+
+void Warriors::cout_get_lives(City * c) {
+//    000:30 red iceman 1 earned 10 elements for his headquarter
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" earned "
+         <<c->get_lives_info()<<" elements for his headquarter"<<endl;
+
+
+}
+
+
+void Warriors::forward() {
+
+    if(crops=="red")
+    {
+        if(city_num<N-1)
+        {
+            city_num+=1;
+            cities[city_num]->add_r(this);
+        }
+        else
+        {
+
+
+        }
+
+
+
+    }
+    else
+    {
+        if(city_num>0)
+        {
+            city_num-=1;
+            cities[city_num]->add_r(this);
+
+        }
+
+    }
+
+
+
+}
+
 
 
 

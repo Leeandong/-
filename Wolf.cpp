@@ -4,16 +4,11 @@
 
 #include "Wolf.h"
 
-Wolf::Wolf(int serial_num, int strength,string& crops_) : Warriors(serial_num, strength) {
+Wolf::Wolf(int serial_num, int strength,string& crops_) : Warriors(serial_num, strength,crops_) {
     name="wolf";
-    crops=crops_;
     attack=warriors_attack[4];
 }
 
-void Wolf::fightback(Warriors *p) {
-    Warriors::Attack(p);
-    p->Hurted(int(warriors_attack[4]/2));
-}
 
 void Wolf::Hurted(int a) {
     Warriors::Hurted(a);

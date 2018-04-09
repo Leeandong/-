@@ -4,10 +4,9 @@
 
 #include "Iceman.h"
 
-Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_num, strength) {
+Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_num, strength,crops_) {
     int tmp=serial_num%3;
     name="iceman";
-    crops=crops_;
     switch (tmp)
     {
         case 0: {
@@ -37,10 +36,8 @@ Iceman::~Iceman() {
 
 }
 
-void Iceman::fightback(Warriors *p) {
-    Warriors::Attack(p);
-    p->Hurted(int(warriors_attack[2]));
-}
+
+
 
 void Iceman::Hurted(int a) {
     Warriors::Hurted(a);

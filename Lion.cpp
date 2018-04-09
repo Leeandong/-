@@ -4,18 +4,13 @@
 
 #include <iostream>
 #include "Lion.h"
-Lion::Lion(int serial_num, int strength,string& crops_,int loyalty_):Warriors(serial_num, strength) {
+Lion::Lion(int serial_num, int strength,string& crops_,int loyalty_):Warriors(serial_num, strength,crops_) {
      name="lion";
-     crops=crops_;
      loyalty=loyalty_;
     attack=warriors_attack[3];
 }
 
-void Lion::fightback(Warriors *p) {
-    Warriors::Attack(p);
-    p->Hurted(int(warriors_attack[3]/2));
 
-}
 
 void Lion::Hurted(int a) {
     Warriors::Hurted(a);

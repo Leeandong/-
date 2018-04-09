@@ -48,6 +48,7 @@ CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Warriors.h
 CMakeFiles/war2_0.dir/Dragon.cpp.o: ../Weapon.h
 
+CMakeFiles/war2_0.dir/Global.cpp.o: ../City.h
 CMakeFiles/war2_0.dir/Global.cpp.o: ../Global.cpp
 CMakeFiles/war2_0.dir/Global.cpp.o: ../Global.h
 

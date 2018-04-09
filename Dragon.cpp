@@ -8,7 +8,7 @@
 #include "Global.h"
 using namespace std;
 
-Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : Warriors(serial_num, strength) {
+Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : Warriors(serial_num, strength,crops_) {
     int tmp=serial_num%3;
     switch (tmp)
     {
@@ -31,7 +31,6 @@ Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : 
     }
     morale=remain_lives/warriors_strength[0];
     name="dragon";
-    crops=crops_;
     attack=warriors_attack[0];
 
 
@@ -49,26 +48,41 @@ Dragon::~Dragon() {
 
 }
 
-void Dragon::fightback(Warriors *p) {
-    Warriors::Attack(p);
-    p->Hurted(int(warriors_attack[0]/2));
-
-}
 
 void Dragon::Hurted(int a) {
     Warriors::Hurted(a);
+
+
 
 }
 
 void Dragon::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[0]);
-    p->fightback(this);
-    if((strength>0)&&(morale>0.8))
+    if(p->get_lives()<=0)
     {
         morale+=0.2;
-        cout<<"cheer"<<endl;
     }
+    else
+    {
+        morale-=0.2;
+    }
+    p->fightback(this);
+    //   003:40 blue dragon 2 yelled in city 4
+    if((strength>0)&&(morale>0.8))
+    {
+
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout<<hours<<':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+             <<" yelled in city "<<city_num;
+
+    }
+
+
 
 }
 
@@ -76,6 +90,20 @@ void Dragon::cout_born() {
     Warriors::cout_born();
     cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
 }
+
+void Dragon::fightback(Warriors *p) {
+    Warriors::fightback(p);
+    if(p->get_lives()<=0)
+    {
+        morale+=0.2;
+    }
+    else
+    {
+        morale-=0.2;
+    }
+}
+
+
 
 
 

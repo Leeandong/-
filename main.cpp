@@ -98,13 +98,13 @@ void creat_warriors(Crops&c)  //制造士兵
 
 int main()
 {
-    int lives=20;  //初始时候赋给司令部的数据
-    int N=1; //两座司令部之间的城市个数
+    lives=200;  //初始时候赋给司令部的数据
+    N=6; //两座司令部之间的城市个数
     string a="blue";
     string b="red";
     Crops blue(lives,blue_sequence,a);
     Crops red(lives,red_sequence,b);
-    City ** cities=new City*[N];
+    cities=new City*[N];
     for(int i=0;i<N;i++)
     {
         cities[i] = new City(i+1);
@@ -113,7 +113,7 @@ int main()
     minutes=0; //第0分钟制造士兵
     creat_warriors(red);
     creat_warriors(blue);
-    while(hours<3)
+    while(hours<1)
     {
         minutes+=5;  //第5分钟lion逃跑
         for(int i=0;i<N;i++)
@@ -178,14 +178,18 @@ int main()
         minutes+=10;//第30分钟若城市中仅有一个武士，获得所有的生命元
         for(int i=0;i<N;i++)
         {
-            if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
-            {
-                blue.add_lives(cities[i]->get_lives());
-            }
             if((cities[i]->get_b()==NULL)&&(cities[i]->get_r()))
             {
+                cities[i]->get_r()->cout_get_lives(cities[i]);
                 red.add_lives(cities[i]->get_lives());
             }
+            if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
+            {
+                cities[i]->get_b()->cout_get_lives(cities[i]);
+
+                blue.add_lives(cities[i]->get_lives());
+            }
+
         }
         minutes+=5; //第35分钟拥有arrows的士兵放箭
         for(int i=1;i<N;i++)

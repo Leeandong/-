@@ -15,7 +15,6 @@ class Wolf: public Warriors {
 
 public:
     Wolf(int serial_num, int strength,string& crops_);
-    virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
     virtual void Attack(Warriors *p); //攻击函数
 

@@ -11,6 +11,8 @@
 #endif //WAR2_0_GLOBAL_H
 
 #include <string>
+#include "City.h"
+
 using namespace std;
 
 //extern int game_time;
@@ -23,3 +25,6 @@ extern int   warriors_strength[5];
 extern string weapons_name[3];
 extern int arrow_attack;
 extern int warriors_attack[5];
+extern int N; //城市数量
+extern int lives; //初始的生命元数目
+extern City ** cities; //城市的数目

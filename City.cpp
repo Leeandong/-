@@ -22,17 +22,6 @@ int City::get_lives() {
     return temp;
 }
 
-void City::attack() {
-    if((index%2==1)||(flag==1))
-    {
-        r->Attack(b);
-    }
-    else
-    {
-        b->Attack(r);
-    }
-
-}
 
 
 
@@ -191,6 +180,24 @@ void City::self_bursting() {
 
         }
 
+    }
+
+
+}
+
+int City::get_lives_info() {
+    return lives;
+}
+
+void City::Fight_in_city() {
+    if((index%2==1)||(flag==1))
+    {
+        r->Attack(b);
+
+    }
+    else
+    {
+        b->Attack(r);
     }
 
 

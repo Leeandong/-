@@ -26,10 +26,12 @@ protected:
     Sword *sword;
     string name; //武士名称
     string crops; //士兵所属的阵营
+    int city_num; //当前所处的城市位置
 
 
 public:
-    Warriors(int serial_num, int strength);
+    Warriors(int serial_num, int strength,string & crops);
+    virtual ~Warriors();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
     virtual void Attack(Warriors *p); //攻击函数
@@ -43,7 +45,8 @@ public:
     virtual int get_fightback_value(); //返回反击值
     bool before_use_bomb(Warriors *w); //是否先使用炸弹
     bool after_use_bomb(Warriors *w); //是否后使用炸弹
-    virtual ~Warriors();
+    void cout_get_lives(City * c); //输出获得生命元的信息
+    virtual void forward(); // 前进
 
 
 };

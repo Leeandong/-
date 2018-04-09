@@ -24,8 +24,8 @@ public:
     City(int index);
 
     //更改旗帜的颜色
-    int get_lives();  //获得城市的所有生命元
-    void attack();  //判断谁先进行攻击
+    int get_lives();  //获得城市的所有生命元 并且生命元归0
+    int get_lives_info(); //获得城市的生命元数量
     Warriors * get_r();  //检查是否有红士兵,返回红色士兵
     Warriors * get_b();  //检查是否有蓝士兵，返回蓝色士兵
     int get_index();  //返回当前城市的编号
@@ -36,6 +36,7 @@ public:
     void delete_b();  //删除红士兵，并将指针置空
     virtual ~City();
     void self_bursting(); //该城市是否有人自爆
+    void Fight_in_city(); //在城市进行战斗
 
 
 };
