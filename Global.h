@@ -28,3 +28,4 @@ extern int warriors_attack[5];
 extern int N; //城市数量
 extern int lives; //初始的生命元数目
 extern City ** cities; //城市的数目
+extern int K; //狮子每次所见少的忠诚度

@@ -14,7 +14,7 @@ using namespace std;
 class Ninja: public Warriors {
 public:
 
-    Ninja(int serial_num, int strength,string& crops_);
+    Ninja(int serial_num, int strength,Crops * c_);
     virtual ~Ninja();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数

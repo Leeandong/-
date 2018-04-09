@@ -22,3 +22,4 @@ int warriors_attack[5]={17,23,14,33,67};
 int N;
 int lives;
 City ** cities;
+int K;

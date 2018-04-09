@@ -4,7 +4,7 @@
 
 #include "Wolf.h"
 
-Wolf::Wolf(int serial_num, int strength,string& crops_) : Warriors(serial_num, strength,crops_) {
+Wolf::Wolf(int serial_num, int strength,Crops * c_) : Warriors(serial_num, strength,c_) {
     name="wolf";
     attack=warriors_attack[4];
 }
@@ -18,4 +18,44 @@ void Wolf::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[4]);
     p->fightback(this);
+    if(p->get_lives()<=0)
+    {
+        if((sword==NULL)&&(p->get_sword()))
+        {
+            sword = new Sword(*(p->get_sword()));
+        }
+
+        if((arrow==NULL)&&(p->get_arrow()))
+        {
+            arrow = new Arrow(*(p->get_arrow()));
+        }
+
+        if((bomb==NULL)&&(p->get_bomb()))
+        {
+            bomb = new Bomb(*(p->get_bomb()));
+        }
+    }
 }
+
+void Wolf::fightback(Warriors *p) {
+    Warriors::fightback(p);
+    if(p->get_lives()<=0)
+    {
+        if((sword==NULL)&&(p->get_sword()))
+        {
+            sword = new Sword(*(p->get_sword()));
+        }
+
+        if((arrow==NULL)&&(p->get_arrow()))
+        {
+            arrow = new Arrow(*(p->get_arrow()));
+        }
+
+        if((bomb==NULL)&&(p->get_bomb()))
+        {
+            bomb = new Bomb(*(p->get_bomb()));
+        }
+    }
+}
+
+

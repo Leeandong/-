@@ -4,7 +4,7 @@
 
 #include "Iceman.h"
 
-Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_num, strength,crops_) {
+Iceman::Iceman(int serial_num, int strength,Crops * c_) : Warriors(serial_num, strength,c_) {
     int tmp=serial_num%3;
     name="iceman";
     switch (tmp)
@@ -24,6 +24,7 @@ Iceman::Iceman(int serial_num, int strength,string & crops_) : Warriors(serial_n
 
     }
     attack=warriors_attack[2];
+    step=0;
 }
 
 Iceman::~Iceman() {
@@ -47,4 +48,23 @@ void Iceman::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[2]);
     p->fightback(this);
+}
+
+void Iceman::forward() {
+    Warriors::forward();
+    step++;
+    if(step%2==0)
+    {
+        if(strength>9)
+        {
+            strength-=9;
+        }
+        else
+        {
+            strength=1;
+        }
+        attack+=20;
+
+    }
+
 }

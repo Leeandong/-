@@ -94,6 +94,7 @@ CMakeFiles/war2_0.dir/Sword.cpp.o: ../Weapon.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Bomb.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../City.h
+CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Crops.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/Warriors.cpp.o: ../Warriors.cpp

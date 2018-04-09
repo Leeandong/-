@@ -8,7 +8,7 @@
 #include "Global.h"
 using namespace std;
 
-Dragon::Dragon(int serial_num, int strength,int remain_lives,string & crops_) : Warriors(serial_num, strength,crops_) {
+Dragon::Dragon(int serial_num, int strength,int remain_lives,Crops * c_) : Warriors(serial_num, strength,c_) {
     int tmp=serial_num%3;
     switch (tmp)
     {

@@ -4,22 +4,43 @@
 
 #include "Warriors.h"
 #include <iostream>
+#include "Crops.h"
+
+//
+//Warriors::Warriors(int serial_num, int strength,string & crops_) : serial_num(serial_num), strength(strength) ,crops(crops_){
+//    sword = NULL;
+//    arrow = NULL;
+//    bomb =NULL;
+//    if(crops_=="red")
+//    {
+//        city_num=-1;
+//    }
+//    else
+//    {
+//        city_num=N;
+//    }
+//
+//}
 
 
-Warriors::Warriors(int serial_num, int strength,string & crops_) : serial_num(serial_num), strength(strength) ,crops(crops_){
+
+Warriors::Warriors(int serial_num, int strength, Crops * c_) : serial_num(serial_num), strength(strength), c(c_) {
+
+
     sword = NULL;
     arrow = NULL;
     bomb =NULL;
-    if(crops_=="red")
+    if(c->get_name() == "red")
     {
-        city_num=-1;
+        city_num=1;
     }
     else
     {
-        city_num=N;
+        city_num=N-1;
     }
-
+    crops = c->get_name();
 }
+
 
 void Warriors::Hurted(int a){strength-=a;}
 
@@ -89,7 +110,7 @@ bool Warriors::run_away() {
     return false;
 }
 
-void Warriors::cout_march(City *c) {
+void Warriors::cout_march() {
     //000:10 red iceman 1 marched to city 1 with 20 elements and force 30
     cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
@@ -97,9 +118,11 @@ void Warriors::cout_march(City *c) {
     cout.width(2); // 设置宽度
     cout.fill('0');// 设置填充
     cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" march to city "
-         <<c->get_index()<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
+         <<city_num<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
 }
+
+
 
 void Warriors::Archery(Warriors *w) {
     if(arrow)
@@ -198,17 +221,11 @@ void Warriors::forward() {
 
     if(crops=="red")
     {
-        if(city_num<N-1)
-        {
-            city_num+=1;
+
+        if(city_num<N-1) {
+            city_num += 1;
             cities[city_num]->add_r(this);
         }
-        else
-        {
-
-
-        }
-
 
 
     }
@@ -226,6 +243,68 @@ void Warriors::forward() {
 
 
 }
+
+void Warriors::cout_reach() {
+
+//    021:10 red lion 2 reached blue headquarter
+// with 2 elements and force 4
+
+    if(crops=="red")
+    {
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout<<hours<<':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+             <<" reached blue headquarter with "<<strength
+             <<" elements and force "<<attack<<endl;
+
+    }
+    else
+    {
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout<<hours<<':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+             <<" reached red headquarter with "<<strength
+             <<" elements and force "<<attack<<endl;
+
+    }
+
+}
+
+void Warriors::add_lives(int lives_) {
+    strength+=lives_;
+}
+
+void Warriors::cout_die() {
+//    001:40 red lion 2 was killed in city 1
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+         <<" was killed in city "<<city_num<<endl;
+
+}
+
+Sword *Warriors::get_sword() {
+    return sword;
+}
+
+Arrow *Warriors::get_arrow() {
+    return arrow;
+}
+
+Bomb *Warriors::get_bomb() {
+    return bomb;
+}
+
+
 
 
 

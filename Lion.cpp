@@ -4,22 +4,33 @@
 
 #include <iostream>
 #include "Lion.h"
-Lion::Lion(int serial_num, int strength,string& crops_,int loyalty_):Warriors(serial_num, strength,crops_) {
+Lion::Lion(int serial_num, int strength,Crops * c_,int loyalty_):Warriors(serial_num, strength,c_) {
      name="lion";
      loyalty=loyalty_;
     attack=warriors_attack[3];
+    temp_lives=strength;
 }
 
 
 
 void Lion::Hurted(int a) {
+    temp_lives=strength;
     Warriors::Hurted(a);
 }
 
 void Lion::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[3]);
+    if(p->get_lives()>0)
+    {
+        loyalty-=K;
+    }
     p->fightback(this);
+    if(strength<=0)
+    {
+        p->add_lives(temp_lives);
+    }
+
 
 }
 
@@ -42,4 +53,16 @@ bool Lion::run_away() {
         return false;
     }
 
+}
+
+void Lion::fightback(Warriors *p) {
+    Warriors::fightback(p);
+    if(strength<=0)
+    {
+        p->add_lives(temp_lives);
+    }
+    if(p->get_lives()>0)
+    {
+        loyalty-=K;
+    }
 }

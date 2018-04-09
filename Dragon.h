@@ -17,13 +17,13 @@ class Dragon: public Warriors {
 private:
     float morale;
 public:
-    Dragon(int serial_num, int strength,int remain_lives,string & crops_);
+    Dragon(int serial_num, int strength,int remain_lives,Crops * c_);
     virtual void Hurted(int a);  //受伤函数
     virtual void Attack(Warriors *p); //攻击函数
     virtual ~Dragon();
     virtual void cout_born() ;
 
-    void fightback(Warriors *p);
+    virtual void fightback(Warriors *p);
 };
 
 

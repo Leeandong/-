@@ -120,12 +120,26 @@ bool Crops::lose() {
     cout<<hours<<':';
     cout.width(2); // 设置宽度
     cout.fill('0');// 设置填充
-    cout << minutes << ' ' << name <<" 003:10 blue headquarter was taken"<<endl;
+    cout << minutes << ' ' << name <<" headquarter was taken"<<endl;
     return true;
     }
     else
     {
         return false;
+    }
+
+}
+
+void Crops::delete_run() {
+
+    if(warriors)
+    {
+        if(warriors->run_away())
+        {
+            delete warriors;
+            warriors=NULL;
+        }
+
     }
 
 }

@@ -12,7 +12,7 @@
 #include "Arrow.h"
 #include "Global.h"
 #include "City.h"
-
+class Crops;
 
 
 class Warriors {
@@ -25,12 +25,16 @@ protected:
     Bomb *bomb;
     Sword *sword;
     string name; //武士名称
-    string crops; //士兵所属的阵营
+    string crops; //阵营的名称
+    Crops * c; //阵营的指针
     int city_num; //当前所处的城市位置
 
 
 public:
-    Warriors(int serial_num, int strength,string & crops);
+
+
+    Warriors(int serial_num, int strength, Crops *c_);
+
     virtual ~Warriors();
     virtual void fightback(Warriors *p); //反击函数
     virtual void Hurted(int a);  //受伤函数
@@ -38,7 +42,8 @@ public:
     void cout_info(); //输出自己的信息，格式为 阵营+名字+编号
     int get_lives();
     virtual void cout_born();
-    virtual void cout_march(City *c);  //输出前进的消息
+    virtual void cout_march();  //输出前进的消息
+    virtual void cout_reach(); //输出到达敌方指挥部的消息
     virtual bool run_away();
     virtual void Archery(Warriors * w); //射箭
     virtual int get_attack_value(); //返回攻击值
@@ -47,6 +52,11 @@ public:
     bool after_use_bomb(Warriors *w); //是否后使用炸弹
     void cout_get_lives(City * c); //输出获得生命元的信息
     virtual void forward(); // 前进
+    virtual void add_lives(int lives_); //增加生命值
+    virtual void cout_die(); //报告死亡
+    virtual Sword* get_sword();//返回所持的武器
+    virtual Arrow* get_arrow();//返回所持的武器
+    virtual Bomb* get_bomb();//返回所持的武器
 
 
 };

@@ -42,6 +42,7 @@ public:
     Warriors* get(); //获得联盟中停下的士兵,并将指针置为空指针r
     void add_enemy(); //联盟中敌人的数目加1；
     bool lose(); //当前是否被攻克；
+    void delete_run(); //删除逃跑的狮子
 
     virtual ~Crops();
     //删除主函数中new的warriors

@@ -199,6 +199,14 @@ void City::Fight_in_city() {
     {
         b->Attack(r);
     }
+    if(r->get_lives()<=0)
+    {
+        r->cout_die();
+    }
+    if(b->get_lives()<=0)
+    {
+        b->cout_die();
+    }
 
 
 }
