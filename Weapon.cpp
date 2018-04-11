@@ -11,5 +11,13 @@ int Weapon::get_attack() {
     return attack;
 }
 
+void Weapon::Attack(Warriors *p) {
+
+}
+
+void Weapon::cout_condition() {
+
+}
+
 
 

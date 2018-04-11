@@ -8,6 +8,7 @@
 
 
 class Warriors;
+class Crops;
 
 class City {
 
@@ -15,6 +16,8 @@ private:
     int lives;  //城市的生命元数
     int index; //城市的序数值
     int flag;  //0代表无旗帜，1代表红旗帜，2代表蓝色旗帜
+    int step_r; //记录红方连胜次数
+    int step_b; //记录蓝方连胜次数
     Warriors * b;  //指向蓝军士兵
     Warriors * r;  //指向红军士兵
 public:
@@ -37,6 +40,12 @@ public:
     virtual ~City();
     void self_bursting(); //该城市是否有人自爆
     void Fight_in_city(); //在城市进行战斗
+    void after_win(Warriors *winner, Warriors *loser); //胜利后的操作
+    int which_first_attack(); //谁先攻击，奇数红先进攻，偶数蓝先进攻
+    void after_fight(Warriors * winner, Warriors * loser); //战斗结束后有人获胜城市的相关操作
+    void cout_warriors_weapon(); //输出当前武士的武器信息
+
+
 
 
 };

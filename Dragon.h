@@ -24,6 +24,12 @@ public:
     virtual void cout_born() ;
 
     virtual void fightback(Warriors *p);
+
+    virtual void win(Warriors *loser, City *c);
+
+    virtual void lose(Warriors *winner, City *c);
+
+    virtual void after_fight(Warriors *w);
 };
 
 

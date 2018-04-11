@@ -2,6 +2,7 @@
 // Created by 李安东 on 2018/3/14.
 //
 
+#include <iostream>
 #include "Arrow.h"
 #include "Warriors.h"
 #include "Global.h"
@@ -17,4 +18,9 @@ void Arrow::Attack(Warriors *p) {
 
 int Arrow::get_remain_times() {
     return remains;
+}
+
+void Arrow::cout_condition() {
+    Weapon::cout_condition();
+    cout<<"arrow("<<remains<<")";
 }

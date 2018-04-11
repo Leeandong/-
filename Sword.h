@@ -19,6 +19,7 @@ private:
 public:
     Sword(int attack_);
     void Attack(Warriors *p);
+    virtual void cout_condition();
 };
 
 

@@ -36,9 +36,13 @@ Warriors::Warriors(int serial_num, int strength, Crops * c_) : serial_num(serial
     }
     else
     {
-        city_num=N-1;
+        city_num=N;
     }
     crops = c->get_name();
+    for(int i=0;i<3;i++)
+    {
+        weapon[i]=NULL;
+    }
 }
 
 
@@ -120,6 +124,7 @@ void Warriors::cout_march() {
     cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" march to city "
          <<city_num<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
+
 }
 
 
@@ -133,19 +138,19 @@ void Warriors::Archery(Warriors *w) {
             delete arrow;
             arrow=NULL;
         }
-    }
-    cout.width(3); // 设置宽度
-    cout.fill('0');// 设置填充
-    cout<<hours<<':';
-    cout.width(2); // 设置宽度
-    cout.fill('0');// 设置填充
-    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot ";
-    if(w->get_lives()<=0)
-    {
-        w->cout_info();
+        cout.width(3); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout<<hours<<':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot ";
+        if(w->get_lives()<=0)
+        {
+            w->cout_info();
+        }
+        cout<<endl;
     }
 
-    cout<<endl;
 
 
 }
@@ -244,35 +249,20 @@ void Warriors::forward() {
 
 }
 
-void Warriors::cout_reach() {
+void Warriors::cout_reach(Crops * c) {
 
 //    021:10 red lion 2 reached blue headquarter
 // with 2 elements and force 4
 
-    if(crops=="red")
-    {
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout<<hours<<':';
-        cout.width(2); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
-             <<" reached blue headquarter with "<<strength
-             <<" elements and force "<<attack<<endl;
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+         <<" reached " << c->get_name() <<" headquarter with "<<strength
+         <<" elements and force "<<attack<<endl;
 
-    }
-    else
-    {
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout<<hours<<':';
-        cout.width(2); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
-             <<" reached red headquarter with "<<strength
-             <<" elements and force "<<attack<<endl;
-
-    }
 
 }
 
@@ -303,6 +293,91 @@ Arrow *Warriors::get_arrow() {
 Bomb *Warriors::get_bomb() {
     return bomb;
 }
+
+void Warriors::win(Warriors *loser,City *c) {
+
+
+}
+
+void Warriors::lose(Warriors *winner,City *c) {
+
+}
+
+void Warriors::after_fight(Warriors *w) {
+
+}
+
+Crops *Warriors::get_crop() {
+    return c;
+}
+
+void Warriors::cout_weapons() {
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+         <<" has ";
+    if(num_weapons()==0)
+    {
+        cout<<" no weapon"<<endl;
+    }
+    else
+    {
+        int i=0;
+        int temp=num_weapons();
+        while(temp>=0)
+        {
+
+            for(i;i<3;i++)
+            {
+                if(weapon[i])
+                    weapon[i]->cout_condition();
+                break;
+            }
+            if(temp==0)
+            {
+                cout<<endl;
+            }
+            else
+            {
+                cout<<',';
+            }
+            temp--;
+        }
+
+    }
+
+
+
+
+}
+
+int Warriors::num_weapons() {
+    int temp=-1;
+    if(arrow)
+    {
+        temp++;
+        weapon[temp]=sword;
+
+    }
+    if(bomb)
+    {
+        temp++;
+        weapon[temp]=bomb;
+
+    }
+    if(sword)
+    {
+        temp++;
+        weapon[temp]=sword;
+    }
+    return temp;
+
+}
+
+
 
 
 

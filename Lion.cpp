@@ -21,16 +21,7 @@ void Lion::Hurted(int a) {
 void Lion::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[3]);
-    if(p->get_lives()>0)
-    {
-        loyalty-=K;
-    }
     p->fightback(this);
-    if(strength<=0)
-    {
-        p->add_lives(temp_lives);
-    }
-
 
 }
 
@@ -57,12 +48,20 @@ bool Lion::run_away() {
 
 void Lion::fightback(Warriors *p) {
     Warriors::fightback(p);
-    if(strength<=0)
-    {
-        p->add_lives(temp_lives);
-    }
-    if(p->get_lives()>0)
+}
+
+void Lion::lose(Warriors *winner, City *c) {
+    Warriors::lose(winner, c);
+    winner->add_lives(temp_lives);
+
+
+}
+
+void Lion::after_fight(Warriors *w) {
+    Warriors::after_fight(w);
+    if(w->get_lives()>0)
     {
         loyalty-=K;
     }
+
 }

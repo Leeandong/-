@@ -16,7 +16,10 @@ public:
 
     Bomb();
 
-    void Attack(Warriors *p) override;
+    virtual void Attack(Warriors *p) ;
+
+    virtual void cout_condition();
+
 
 };
 

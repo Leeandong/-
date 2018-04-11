@@ -18,6 +18,8 @@ public:
     void Attack(Warriors *p) ;
     int get_remain_times();
 
+    virtual void cout_condition();
+
 };
 
 

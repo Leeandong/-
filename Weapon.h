@@ -16,7 +16,8 @@ protected:
     int attack; //攻击值
 public:
     Weapon(int attack_);
-    virtual void Attack(Warriors* p)=0;
+    virtual void Attack(Warriors* p);
+    virtual void cout_condition();
     int get_attack(); //获得攻击力的值
 
 };

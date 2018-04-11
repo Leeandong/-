@@ -23,6 +23,7 @@ CMakeFiles/war2_0.dir/City.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/City.cpp.o: ../Bomb.h
 CMakeFiles/war2_0.dir/City.cpp.o: ../City.cpp
 CMakeFiles/war2_0.dir/City.cpp.o: ../City.h
+CMakeFiles/war2_0.dir/City.cpp.o: ../Crops.h
 CMakeFiles/war2_0.dir/City.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/City.cpp.o: ../Sword.h
 CMakeFiles/war2_0.dir/City.cpp.o: ../Warriors.h

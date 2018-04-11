@@ -24,6 +24,10 @@ public:
     virtual bool run_away();
 
     virtual void fightback(Warriors *p);
+
+    virtual void lose(Warriors *winner, City *c);
+
+    virtual void after_fight(Warriors *w);
     //忠诚度低于一定值时逃跑
 };
 

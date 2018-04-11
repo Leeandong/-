@@ -17,6 +17,7 @@ Crops::Crops(int lives, int *p_warriors, const string &name
 
     }
     warriors=NULL;
+    enemys=NULL;
     num=0;
     flag=0;
     index=0;
@@ -80,9 +81,10 @@ int Crops::get_lives() {
 
 Warriors *Crops::get() {
     Warriors* temp=warriors;
-    warriors=NULL;
     return temp;
 }
+
+
 
 void Crops::add(Warriors *w) {
     warriors=w;
@@ -98,6 +100,8 @@ string &Crops::get_name() {
 Crops::~Crops() {
     if(warriors)
         delete(warriors);
+    if(enemys)
+        delete(enemys);
 
 }
 
@@ -105,11 +109,7 @@ void Crops::add_lives(int i) {
     lives+=i;
 }
 
-void Crops::add_enemy() {
-    num_enemy++;
 
-
-}
 
 bool Crops::lose() {
     if(num_enemy>=2)
@@ -141,6 +141,49 @@ void Crops::delete_run() {
         }
 
     }
+
+}
+
+void Crops::add_enemy(Warriors * w) {
+    enemys = w;
+
+}
+
+void Crops::cout_reach() {
+    if(enemys)
+    {
+        enemys->cout_reach(this);
+        delete(enemys);
+        enemys=NULL;
+        num_enemy++;
+        if(num_enemy>=2)
+        {
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout<<hours<<':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ' << name <<" headquarter was taken"<<endl;
+            exit(0);
+        }
+    }
+
+
+}
+
+void Crops::warriors_to_null() {
+    warriors = NULL;
+
+}
+
+void Crops::cout_lives() {
+//    000:50 100 elements in red headquarter
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << lives <<" elements in "<<name<<" headquarter";
 
 }
 

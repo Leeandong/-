@@ -17,6 +17,9 @@ public:
     Wolf(int serial_num, int strength,Crops * c_);
     virtual void Hurted(int a);  //受伤函数
     virtual void Attack(Warriors *p); //攻击函数
+    virtual void win(Warriors *loser, City *c);
+
+
     void fightback(Warriors *p) override;
 
 };

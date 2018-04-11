@@ -113,197 +113,150 @@ int main()
     minutes=0; //第0分钟制造士兵
     creat_warriors(&red);
     creat_warriors(&blue);
-    while(hours<1)
-    {
-        minutes+=5;  //第5分钟lion逃跑
-        for(int i=0;i<N;i++)
-        {
+    while(hours<1) {
+        minutes += 5;  //第5分钟lion逃跑
+        red.delete_run();
+        for (int i = 0; i < N; i++) {
             cities[i]->delete_run();
         }
-
-
-        minutes+=5; //第10分钟武士前进
-        if(cities[0]->get_b())
-        {
-            cities[0]->get_b()->cout_march();
-            red.add_enemy();
+        blue.delete_run();
+        minutes += 5; //第10分钟武士前进
+        if (cities[0]->get_b()) {
+            red.add_enemy(cities[0]->get_b());
             cities[0]->delete_b();
         }
-        if(red.lose())
-        {
-            for(int i=0;i<N;i++)
-            {
-                delete cities[i];
-            }
-            delete []cities;
-            return 0;
+        if (cities[N - 1]->get_r()) {
+            blue.add_enemy(cities[N - 1]->get_r());
+            cities[N - 1]->delete_r();
         }
-
-        for(int i=1; i<N;i++)
-        {
-            if(cities[N-i-1]->get_r())
-            {
-                cities[N-i-1]->get_r()->forward();
+        for (int i = 1; i < N; i++) {
+            if (cities[N - i - 1]->get_r()) {
+                cities[N - i - 1]->get_r()->forward();
             }
-            if(cities[i]->get_b())
-            {
+            if (cities[i]->get_b()) {
                 cities[i]->get_b()->forward();
             }
-
         }
-        Warriors * temp =red.get();
-        if(temp)
-        {
-            cities[0]->add_r(temp);
+        if (red.get()) {
+            cities[0]->add_r(red.get());
+            red.warriors_to_null();
         }
-        temp=NULL;
-        temp = blue.get();
-        if(temp)
-        {
-            cities[N-1]->add_b(temp);
+        if (blue.get()) {
+            cities[N - 1]->add_b(blue.get());
+            blue.warriors_to_null();
         }
-        temp=NULL;
-        for(int i=0;i<N;i++)
-        {
-            if(cities[i]->get_r())
-            {
+        blue.cout_reach();
+        if (red.lose()) {
+            for (int i = 0; i < N; i++) {
+                delete cities[i];
+            }
+            delete[]cities;
+            return 0;
+        }
+        for (int i = 0; i < N; i++) {
+            if (cities[i]->get_r()) {
                 cities[i]->get_r()->cout_march();
 
             }
-            if(cities[i]->get_b())
-            {
+            if (cities[i]->get_b()) {
                 cities[i]->get_b()->cout_march();
 
             }
         }
-        if(cities[N-1]->get_r())
-        {
-            cities[N-1]->get_r()->cout_march();
-            blue.add_enemy();
-            cities[N-1]->delete_r();
-        }
-        if(blue.lose())
-        {
-            for(int i=0;i<N;i++)
-            {
+        red.cout_reach();
+        if (blue.lose()) {
+            for (int i = 0; i < N; i++) {
                 delete cities[i];
             }
-            delete []cities;
+            delete[]cities;
             return 0;
         }
 
-        minutes+=10;//第20分钟城市生产生命元
-        for(int i=0;i<N;i++)
-        {
+        minutes += 10;//第20分钟城市生产生命元
+        for (int i = 0; i < N; i++) {
             cities[i]->produce_lives();
         }
-        minutes+=10;//第30分钟若城市中仅有一个武士，获得所有的生命元
-        for(int i=0;i<N;i++)
-        {
-            if((cities[i]->get_b()==NULL)&&(cities[i]->get_r()))
-            {
+        minutes += 10;//第30分钟若城市中仅有一个武士，获得所有的生命元
+        for (int i = 0; i < N; i++) {
+            if ((cities[i]->get_b() == NULL) && (cities[i]->get_r())) {
                 cities[i]->get_r()->cout_get_lives(cities[i]);
                 red.add_lives(cities[i]->get_lives());
             }
-            if((cities[i]->get_r()==NULL)&&(cities[i]->get_b()))
-            {
+            if ((cities[i]->get_r() == NULL) && (cities[i]->get_b())) {
                 cities[i]->get_b()->cout_get_lives(cities[i]);
 
                 blue.add_lives(cities[i]->get_lives());
             }
 
         }
-        minutes+=5; //第35分钟拥有arrows的士兵放箭
-        for(int i=1;i<N;i++)
-        {
-            if(cities[i]->get_b())
-            {
-                cities[i-1]->get_r()->Archery(cities[i]->get_b());
-                if(cities[i]->get_b()->get_lives()<=0)
-                {
-                    cities[i]->delete_b();
+        minutes += 5; //第35分钟拥有arrows的士兵放箭
+        if (cities[0]->get_b()) {
+            if (red.get()) {
+                red.get()->Archery(cities[0]->get_b());
+                if (cities[0]->get_b()->get_lives() <= 0) {
+                    cities[0]->delete_b();
                 }
             }
-            if(cities[N-i-1]->get_r())
-            {
-                cities[N-i]->get_b()->Archery(cities[N-i-1]->get_r());
-                if(cities[N-i-1]->get_r()->get_lives()<=0)
-                {
-                    cities[i]->delete_r();
+
+        }
+        for (int i = 1; i < N; i++) {
+            if (cities[i]->get_b()) {
+                if (cities[i - 1]->get_r()) {
+                    cities[i - 1]->get_r()->Archery(cities[i]->get_b());
+                    if (cities[i]->get_b()->get_lives() <= 0) {
+                        cities[i]->delete_b();
+                    }
+
                 }
+
+            }
+            if (cities[N - i - 1]->get_r()) {
+                if (cities[N - i]->get_b()) {
+                    cities[N - i]->get_b()->Archery(cities[N - i - 1]->get_r());
+                    if (cities[N - i - 1]->get_r()->get_lives() <= 0) {
+                        cities[i]->delete_r();
+                    }
+                }
+
             }
         }
-        minutes+=3; //第38分钟拥有bombs的勇士自爆
+
+        if (cities[N - 1]->get_r()) {
+            if (blue.get()) {
+                blue.get()->Archery(cities[0]->get_r());
+                if (cities[N - 1]->get_r()->get_lives() <= 0) {
+                    cities[N - 1]->delete_r();
+                }
+            }
+
+        }
+        minutes += 3; //第38分钟拥有bombs的勇士自爆
         {
-            for(int i=0;i<N;i++)
-            {
+            for (int i = 0; i < N; i++) {
                 cities[i]->self_bursting();
             }
         }
-        minutes+=2; //第四十分钟两个武士之间相互战斗
+        minutes += 2; //第四十分钟两个武士之间相互战斗
+        for (int i = 0; i < N; i++) {
+            cities[i]->Fight_in_city();
+        }
+        minutes += 10; //第50分钟司令部报告生命元数目
+        {
+//            000:50 100 elements in red headquarter
+            red.cout_lives();
+            blue.cout_lives();
 
+        }
+        minutes += 5; //第55分钟武士报告武器情况
+        {
 
+        }
+        for (int i = 0; i < N; i++) {
+            cities[i]->cout_warriors_weapon();
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    hours++;
+        hours++;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     for(int i=0;i<N;i++)
@@ -311,10 +264,43 @@ int main()
         delete cities[i];
     }
     delete []cities;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return 0;
-
-
-
-
-
 }

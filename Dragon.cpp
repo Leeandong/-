@@ -59,17 +59,40 @@ void Dragon::Hurted(int a) {
 void Dragon::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[0]);
-    if(p->get_lives()<=0)
-    {
-        morale+=0.2;
-    }
-    else
+    p->fightback(this);
+
+
+
+
+}
+
+void Dragon::cout_born() {
+    Warriors::cout_born();
+    cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
+}
+
+void Dragon::fightback(Warriors *p) {
+    Warriors::fightback(p);
+}
+
+void Dragon::win(Warriors *loser, City *c) {
+    Warriors::win(loser, c);
+    morale+=0.2;
+
+}
+
+void Dragon::lose(Warriors *winner, City *c) {
+    Warriors::lose(winner, c);
+}
+
+void Dragon::after_fight(Warriors *w) {
+    Warriors::after_fight(w);
+    if(w->get_lives()>0)
     {
         morale-=0.2;
     }
-    p->fightback(this);
     //   003:40 blue dragon 2 yelled in city 4
-    if((strength>0)&&(morale>0.8))
+    if((strength>0)&&(morale>0.8)&&(cities[city_num-1]->which_first_attack()))
     {
 
         cout.width(3); // 设置宽度
@@ -83,25 +106,8 @@ void Dragon::Attack(Warriors *p) {
     }
 
 
-
 }
 
-void Dragon::cout_born() {
-    Warriors::cout_born();
-    cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
-}
-
-void Dragon::fightback(Warriors *p) {
-    Warriors::fightback(p);
-    if(p->get_lives()<=0)
-    {
-        morale+=0.2;
-    }
-    else
-    {
-        morale-=0.2;
-    }
-}
 
 
 

@@ -28,6 +28,7 @@ protected:
     string crops; //阵营的名称
     Crops * c; //阵营的指针
     int city_num; //当前所处的城市位置
+    Weapon * weapon[3]; //维持一个武器的数组；
 
 
 public:
@@ -43,7 +44,7 @@ public:
     int get_lives();
     virtual void cout_born();
     virtual void cout_march();  //输出前进的消息
-    virtual void cout_reach(); //输出到达敌方指挥部的消息
+    virtual void cout_reach(Crops * c); //输出到达敌方指挥部的消息
     virtual bool run_away();
     virtual void Archery(Warriors * w); //射箭
     virtual int get_attack_value(); //返回攻击值
@@ -57,6 +58,12 @@ public:
     virtual Sword* get_sword();//返回所持的武器
     virtual Arrow* get_arrow();//返回所持的武器
     virtual Bomb* get_bomb();//返回所持的武器
+    virtual void win(Warriors * loser,City * c); //主要完成胜利后的操作
+    virtual void lose(Warriors * winner,City * c); //主要完成失败后的对应操作
+    virtual void after_fight(Warriors * w); //完成战斗完成后的操作
+    Crops * get_crop(); //获得当前武士所在的City
+    virtual void cout_weapons() ;//输出当前的武器信息
+    virtual int num_weapons();  //返回武器的数目
 
 
 };

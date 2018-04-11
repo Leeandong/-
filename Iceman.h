@@ -20,7 +20,7 @@ public:
     virtual ~Iceman();
     virtual void Hurted(int a) ;   //受伤函数
     virtual void Attack(Warriors *p) ; //攻击函数
-    void forward() override;
+    virtual void forward();
 
 };
 
