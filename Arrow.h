@@ -20,6 +20,8 @@ public:
 
     virtual void cout_condition();
 
+    virtual bool if_exist();
+
 };
 
 

@@ -61,8 +61,8 @@ void Warriors::fightback(Warriors *p) {
         if(sword)
         {
             sword->Attack(p);
-            p->Hurted(int(attack/2));
         }
+        p->Hurted(int(attack/2));
         cout.width(3); // 设置宽度
         cout.fill('0');// 设置填充
         cout<<hours<<':';
@@ -70,7 +70,7 @@ void Warriors::fightback(Warriors *p) {
         cout.fill('0');// 设置填充
         cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" fought back against ";
         p->cout_info();
-        cout<<" in city "<< index<<endl;
+        cout<<" in city "<<city_num<<endl;
 
     }
 
@@ -84,7 +84,7 @@ void Warriors::Attack(Warriors *p) {
     cout<<hours<<':';
     cout.width(2); // 设置宽度
     cout.fill('0');// 设置填充
-    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" attack ";
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" attacked ";
     p->cout_info();
     cout<< " in city "<<city_num<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
@@ -121,7 +121,7 @@ void Warriors::cout_march() {
     cout<<hours<<':';
     cout.width(2); // 设置宽度
     cout.fill('0');// 设置填充
-    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" march to city "
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" marched to city "
          <<city_num<<" with "<<strength<<" elements"<<" and force "<<attack<<endl;
 
 
@@ -143,7 +143,7 @@ void Warriors::Archery(Warriors *w) {
         cout<<hours<<':';
         cout.width(2); // 设置宽度
         cout.fill('0');// 设置填充
-        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot ";
+        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot";
         if(w->get_lives()<=0)
         {
             w->cout_info();
@@ -227,19 +227,22 @@ void Warriors::forward() {
     if(crops=="red")
     {
 
-        if(city_num<N-1) {
+        if(city_num<N) {
+            cities[city_num-1]->red_to_null();
             city_num += 1;
-            cities[city_num]->add_r(this);
+            cities[city_num-1]->add_r(this);
+
         }
 
 
     }
     else
     {
-        if(city_num>0)
+        if(city_num>1)
         {
+            cities[city_num-1]->blue_to_null();
             city_num-=1;
-            cities[city_num]->add_r(this);
+            cities[city_num-1]->add_b(this);
 
         }
 
@@ -319,9 +322,9 @@ void Warriors::cout_weapons() {
     cout.fill('0');// 设置填充
     cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
          <<" has ";
-    if(num_weapons()==0)
+    if(num_weapons()==-1)
     {
-        cout<<" no weapon"<<endl;
+        cout<<"no weapon"<<endl;
     }
     else
     {
@@ -329,12 +332,14 @@ void Warriors::cout_weapons() {
         int temp=num_weapons();
         while(temp>=0)
         {
-
             for(i;i<3;i++)
             {
                 if(weapon[i])
+                {
                     weapon[i]->cout_condition();
-                break;
+                    i++;
+                    break;
+                }
             }
             if(temp==0)
             {
@@ -356,10 +361,19 @@ void Warriors::cout_weapons() {
 
 int Warriors::num_weapons() {
     int temp=-1;
+
     if(arrow)
     {
-        temp++;
-        weapon[temp]=sword;
+        if(!arrow->if_exist())
+        {
+            delete arrow;
+            arrow=NULL;
+        }
+        else
+        {
+            temp++;
+            weapon[temp]=arrow;
+        }
 
     }
     if(bomb)
@@ -368,10 +382,22 @@ int Warriors::num_weapons() {
         weapon[temp]=bomb;
 
     }
+
     if(sword)
     {
-        temp++;
-        weapon[temp]=sword;
+        if(!sword->if_exist())
+        {
+            delete sword;
+            sword=NULL;
+
+        }
+        else
+        {
+            temp++;
+            weapon[temp]=sword;
+
+        }
+
     }
     return temp;
 

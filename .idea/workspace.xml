@@ -15,25 +15,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arrow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Arrow.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arrow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Arrow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bomb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Bomb.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bomb.h" beforeDir="false" afterPath="$PROJECT_DIR$/Bomb.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/City.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/City.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/City.h" beforeDir="false" afterPath="$PROJECT_DIR$/City.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crops.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Crops.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crops.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crops.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dragon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Dragon.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dragon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Dragon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iceman.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iceman.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lion.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Lion.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lion.h" beforeDir="false" afterPath="$PROJECT_DIR$/Lion.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Iceman.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Iceman.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ninja.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Ninja.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sword.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Sword.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sword.h" beforeDir="false" afterPath="$PROJECT_DIR$/Sword.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Warriors.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Warriors.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Warriors.h" beforeDir="false" afterPath="$PROJECT_DIR$/Warriors.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weapon.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weapon.h" beforeDir="false" afterPath="$PROJECT_DIR$/Weapon.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wolf.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Wolf.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Wolf.h" beforeDir="false" afterPath="$PROJECT_DIR$/Wolf.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Arrow.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Arrow.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Bomb.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Bomb.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/CXX.includecache" afterDir="false" />
@@ -48,9 +40,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Weapon.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Weapon.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Wolf.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Wolf.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/crops.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/crops.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/war2_0" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/war2_0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -71,8 +61,8 @@
       <file leaf-file-name="Warriors.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Warriors.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8376">
-              <caret line="349" column="5" selection-start-line="349" selection-start-column="5" selection-end-line="349" selection-end-column="5" />
+            <state relative-caret-position="181">
+              <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
               <folding>
                 <element signature="e#39#60#0" expanded="true" />
               </folding>
@@ -80,20 +70,29 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Dragon.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dragon.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="City.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/City.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="-446">
               <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="City.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="City.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/City.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7848">
-              <caret line="327" column="26" selection-start-line="327" selection-start-column="26" selection-end-line="327" selection-end-column="26" />
+            <state relative-caret-position="310">
+              <caret line="277" column="40" lean-forward="true" selection-start-line="277" selection-start-column="40" selection-end-line="277" selection-end-column="40" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
@@ -101,23 +100,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="Crops.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crops.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="730">
-              <caret line="265" column="20" selection-start-line="265" selection-start-column="20" selection-end-line="265" selection-end-column="20" />
-              <folding>
-                <element signature="e#783#802#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="24">
+              <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sword.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sword.cpp">
+      <file leaf-file-name="Dragon.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dragon.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="252">
+              <caret line="61" column="16" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -125,29 +121,17 @@
       <file leaf-file-name="Bomb.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Bomb.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
+            <state relative-caret-position="221">
               <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bomb.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Bomb.cpp">
+      <file leaf-file-name="Iceman.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Iceman.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-              <folding>
-                <element signature="e#39#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arrow.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Arrow.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+            <state relative-caret-position="158">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -155,8 +139,8 @@
       <file leaf-file-name="Warriors.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Warriors.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1536">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="29" />
+            <state relative-caret-position="549">
+              <caret line="45" column="27" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="27" />
               <folding>
                 <element signature="e#93#112#0" expanded="true" />
               </folding>
@@ -164,13 +148,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Arrow.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Arrow.cpp">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="240">
+              <caret line="225" selection-start-line="225" selection-end-line="225" />
               <folding>
-                <element signature="e#39#58#0" expanded="true" />
+                <element signature="e#783#802#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,6 +171,8 @@
       <find>crops</find>
       <find>get</find>
       <find>get_lives</find>
+      <find>10</find>
+      <find>was killed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,8 +198,6 @@
         <option value="$PROJECT_DIR$/crops.cpp" />
         <option value="$PROJECT_DIR$/crops.h" />
         <option value="$PROJECT_DIR$/Ninja.h" />
-        <option value="$PROJECT_DIR$/Ninja.cpp" />
-        <option value="$PROJECT_DIR$/Iceman.cpp" />
         <option value="$PROJECT_DIR$/Global.h" />
         <option value="$PROJECT_DIR$/Global.cpp" />
         <option value="$PROJECT_DIR$/Wolf.cpp" />
@@ -222,22 +206,24 @@
         <option value="$PROJECT_DIR$/Dragon.h" />
         <option value="$PROJECT_DIR$/Iceman.h" />
         <option value="$PROJECT_DIR$/Lion.cpp" />
-        <option value="$PROJECT_DIR$/Dragon.cpp" />
         <option value="$PROJECT_DIR$/Crops.h" />
-        <option value="$PROJECT_DIR$/Crops.cpp" />
         <option value="$PROJECT_DIR$/Bomb.h" />
+        <option value="$PROJECT_DIR$/Bomb.cpp" />
+        <option value="$PROJECT_DIR$/Warriors.h" />
+        <option value="$PROJECT_DIR$/Crops.cpp" />
+        <option value="$PROJECT_DIR$/Arrow.h" />
         <option value="$PROJECT_DIR$/Weapon.h" />
         <option value="$PROJECT_DIR$/Weapon.cpp" />
-        <option value="$PROJECT_DIR$/Sword.cpp" />
         <option value="$PROJECT_DIR$/Sword.h" />
-        <option value="$PROJECT_DIR$/Bomb.cpp" />
-        <option value="$PROJECT_DIR$/Arrow.h" />
+        <option value="$PROJECT_DIR$/Sword.cpp" />
         <option value="$PROJECT_DIR$/Arrow.cpp" />
-        <option value="$PROJECT_DIR$/Warriors.h" />
-        <option value="$PROJECT_DIR$/Warriors.cpp" />
         <option value="$PROJECT_DIR$/City.h" />
-        <option value="$PROJECT_DIR$/City.cpp" />
+        <option value="$PROJECT_DIR$/Dragon.cpp" />
+        <option value="$PROJECT_DIR$/Ninja.cpp" />
+        <option value="$PROJECT_DIR$/Iceman.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/Warriors.cpp" />
+        <option value="$PROJECT_DIR$/City.cpp" />
       </list>
     </option>
   </component>
@@ -258,6 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,7 +256,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,11 +330,12 @@
       <workItem from="1523415156685" duration="873000" />
       <workItem from="1523421110061" duration="327000" />
       <workItem from="1523421710942" duration="15000" />
+      <workItem from="1523528096669" duration="8128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116254000" />
+    <option name="totallyTimeSpent" value="124382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,44 +348,45 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.13742071" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.13742071" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48062015" weight="0.32848486" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50951374" side_tool="true" weight="0.29090908" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.51937985" weight="0.24484849" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.51937985" weight="0.27515152" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" visible="true" weight="0.3430303" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" weight="0.29090908" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48062015" weight="0.32848486" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32848486" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.13883016" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.51937985" weight="0.19636364" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32848486" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" weight="0.2921212" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48062015" weight="0.32848486" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50951374" side_tool="true" weight="0.29090908" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32848486" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.48062015" weight="0.32848486" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
     </layout-to-restore>
   </component>
@@ -412,28 +400,44 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Warriors.cpp</url>
-          <line>313</line>
-          <option name="timeStamp" value="159" />
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>223</line>
+          <option name="timeStamp" value="174" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="160" />
+      <option name="time" value="176" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="red.warriors" />
-        <watch expression="blue.warriors" />
-        <watch expression="*cities[0]" language="ObjectiveC" />
-        <watch expression="*cities[1]" language="ObjectiveC" />
-        <watch expression="*cities[2]" language="ObjectiveC" />
         <watch expression="*cities[3]" language="ObjectiveC" />
-        <watch expression="*cities[4]" language="ObjectiveC" />
-        <watch expression="*cities[5]" language="ObjectiveC" />
+        <watch expression="*cities[3].r" />
+        <watch expression="*cities[3].b" />
+        <watch expression="red" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>red</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>*cities[5]-&gt;b</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>*cities[1]-&gt;r</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>*cities[0]-&gt;r</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>*cities[5]</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -464,18 +468,40 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
       <expression>
-        <expression-string>cities[0]-&gt;lives</expression-string>
+        <expression-string>*cities[5].b</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>*cities[N-1</expression-string>
+        <expression-string>N-i-1</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>*cities[N-1]</expression-string>
+        <expression-string>cities[N-i-1]-&gt;get_r()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cities[N-1]-&gt;get_r()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cities[N - 1]-&gt;get_r()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>city_num</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cities[N - i - 1]-&gt;get_r()</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -594,27 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ninja.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="3580" selection-start-line="3580" selection-end-line="3580" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ninja.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Global.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -622,20 +627,6 @@
           <folding>
             <element signature="e#117#134#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wolf.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Wolf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -653,44 +644,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Iceman.cpp">
+    <entry file="file://$PROJECT_DIR$/Bomb.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Iceman.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="24" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dragon.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dragon.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        <state relative-caret-position="432">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="120">
           <caret line="5" column="157" selection-start-line="5" selection-start-column="157" selection-end-line="5" selection-end-column="157" />
         </state>
       </provider>
@@ -702,79 +668,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Crops.cpp">
+    <entry file="file://$PROJECT_DIR$/Weapon.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="185" column="76" selection-start-line="185" selection-start-column="76" selection-end-line="185" selection-end-column="76" />
+        <state relative-caret-position="333">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Weapon.h">
+    <entry file="file://$PROJECT_DIR$/Sword.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        <state relative-caret-position="348">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sword.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arrow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wolf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Wolf.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Weapon.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sword.h">
+    <entry file="file://$PROJECT_DIR$/Lion.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="525">
+          <caret line="66" column="1" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bomb.h">
+    <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sword.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bomb.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Arrow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
+        <state relative-caret-position="257">
+          <caret line="3580" selection-start-line="3580" selection-end-line="3580" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Arrow.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="465">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#39#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Ninja.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iceman.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ninja.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="764">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bomb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Iceman.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dragon.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Warriors.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1536">
-          <caret line="64" column="29" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="29" />
+        <state relative-caret-position="549">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="27" />
           <folding>
             <element signature="e#93#112#0" expanded="true" />
           </folding>
@@ -783,37 +795,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Warriors.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8376">
-          <caret line="349" column="5" selection-start-line="349" selection-start-column="5" selection-end-line="349" selection-end-column="5" />
+        <state relative-caret-position="181">
+          <caret line="63" column="9" lean-forward="true" selection-start-line="63" selection-start-column="9" selection-end-line="63" selection-end-column="9" />
           <folding>
             <element signature="e#39#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/City.cpp">
+    <entry file="file://$PROJECT_DIR$/Dragon.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7848">
-          <caret line="327" column="26" selection-start-line="327" selection-start-column="26" selection-end-line="327" selection-end-column="26" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="334">
+          <caret line="31" column="19" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crops.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/City.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="-446">
           <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="730">
-          <caret line="265" column="20" selection-start-line="265" selection-start-column="20" selection-end-line="265" selection-end-column="20" />
+        <state relative-caret-position="240">
+          <caret line="225" selection-start-line="225" selection-end-line="225" />
           <folding>
             <element signature="e#783#802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/City.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="277" column="40" lean-forward="true" selection-start-line="277" selection-start-column="40" selection-end-line="277" selection-end-column="40" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

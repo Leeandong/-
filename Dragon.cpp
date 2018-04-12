@@ -10,28 +10,28 @@ using namespace std;
 
 Dragon::Dragon(int serial_num, int strength,int remain_lives,Crops * c_) : Warriors(serial_num, strength,c_) {
     int tmp=serial_num%3;
+    attack=warriors_attack[0];
     switch (tmp)
     {
         case 0: {
-            sword= new Sword(int(warriors_attack[0]*0.2));
-            arrow= new Arrow();
+            if((int(attack*0.2))>0)
+            {
+                sword= new Sword(int(attack*0.2));
+            }
             break;
         }
         case 1: {
-            arrow= new Arrow();
             bomb= new Bomb();
             break;
         }
         default:
         {
-            bomb= new Bomb();
-            sword= new Sword(int(strength*0.2));
+            arrow= new Arrow();
         }
 
     }
-    morale=remain_lives/warriors_strength[0];
+    morale=float(remain_lives)/warriors_strength[0];
     name="dragon";
-    attack=warriors_attack[0];
 
 
 

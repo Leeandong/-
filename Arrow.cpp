@@ -24,3 +24,15 @@ void Arrow::cout_condition() {
     Weapon::cout_condition();
     cout<<"arrow("<<remains<<")";
 }
+
+bool Arrow::if_exist() {
+    if(remains>0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+

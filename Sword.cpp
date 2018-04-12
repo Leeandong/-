@@ -23,6 +23,17 @@ void Sword::cout_condition() {
 
 }
 
+bool Sword::if_exist() {
+    if(attack<=0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
 
 
 

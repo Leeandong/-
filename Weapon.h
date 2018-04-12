@@ -19,6 +19,7 @@ public:
     virtual void Attack(Warriors* p);
     virtual void cout_condition();
     int get_attack(); //获得攻击力的值
+    virtual bool if_exist(); //判断武器是否还存在
 
 };
 

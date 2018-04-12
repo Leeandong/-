@@ -7,24 +7,29 @@
 Iceman::Iceman(int serial_num, int strength,Crops * c_) : Warriors(serial_num, strength,c_) {
     int tmp=serial_num%3;
     name="iceman";
+    attack=warriors_attack[2];
     switch (tmp)
     {
-        case 0: {
-            sword= new Sword(int(warriors_attack[0]*0.2));
+        case 0:
+        {
+            if((int(attack*0.2))>0)
+            {
+                sword= new Sword(int(attack*0.2));
+            }
+
             break;
         }
         case 1: {
-            arrow= new Arrow();
+            bomb= new Bomb();
             break;
         }
         default:
         {
-            bomb= new Bomb();
+            arrow= new Arrow();
         }
 
     }
-    attack=warriors_attack[2];
-    step=0;
+    step=1;
 }
 
 Iceman::~Iceman() {

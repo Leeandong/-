@@ -241,8 +241,6 @@ void City::Fight_in_city() {
 
 
 
-
-
 }
 
 void City::after_win(Warriors *winner, Warriors *loser) {
@@ -275,8 +273,9 @@ void City::after_fight(Warriors *winner, Warriors *loser) {
     cout.fill('0');// 设置填充
     cout << minutes << ' ';
     winner->cout_info();
-    cout<<" earned "<<get_lives()<<" elements for his headquarter";
-    winner->get_crop()->add_lives(get_lives());
+    int temp= get_lives();
+    cout<<" earned "<<temp <<" elements for his headquarter"<<endl;
+    winner->get_crop()->add_lives(temp);
     if(winner->get_crop()->get_name()=="blue")
     {
         if(flag!=2)
@@ -318,8 +317,15 @@ void City::after_fight(Warriors *winner, Warriors *loser) {
         }
 
     }
+    if(loser->get_crop()->get_name()=="blue")
+    {
+        b=NULL;
+    }
+    else
+    {
+        r=NULL;
+    }
     delete(loser);
-    loser=NULL;
 }
 
 void City::cout_warriors_weapon() {
@@ -331,6 +337,16 @@ void City::cout_warriors_weapon() {
     {
         b->cout_weapons();
     }
+
+}
+
+void City::red_to_null() {
+    r=NULL;
+
+}
+
+void City::blue_to_null() {
+    b=NULL;
 
 }
 

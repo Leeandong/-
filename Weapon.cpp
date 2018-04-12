@@ -19,5 +19,9 @@ void Weapon::cout_condition() {
 
 }
 
+bool Weapon::if_exist() {
+    return true;
+}
+
 
 

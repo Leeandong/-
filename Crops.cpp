@@ -183,7 +183,7 @@ void Crops::cout_lives() {
     cout<<hours<<':';
     cout.width(2); // 设置宽度
     cout.fill('0');// 设置填充
-    cout << minutes << ' ' << lives <<" elements in "<<name<<" headquarter";
+    cout << minutes << ' ' << lives <<" elements in "<<name<<" headquarter"<<endl;
 
 }
 

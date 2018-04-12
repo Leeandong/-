@@ -110,10 +110,10 @@ int main()
         cities[i] = new City(i+1);
     }
     hours=0;
-    minutes=0; //第0分钟制造士兵
-    creat_warriors(&red);
-    creat_warriors(&blue);
-    while(hours<1) {
+    while(hours<4) {
+        minutes = 0;
+        creat_warriors(&red);
+        creat_warriors(&blue);
         minutes += 5;  //第5分钟lion逃跑
         red.delete_run();
         for (int i = 0; i < N; i++) {
@@ -193,41 +193,26 @@ int main()
         if (cities[0]->get_b()) {
             if (red.get()) {
                 red.get()->Archery(cities[0]->get_b());
-                if (cities[0]->get_b()->get_lives() <= 0) {
-                    cities[0]->delete_b();
-                }
             }
-
         }
         for (int i = 1; i < N; i++) {
             if (cities[i]->get_b()) {
                 if (cities[i - 1]->get_r()) {
                     cities[i - 1]->get_r()->Archery(cities[i]->get_b());
-                    if (cities[i]->get_b()->get_lives() <= 0) {
-                        cities[i]->delete_b();
-                    }
-
                 }
 
             }
             if (cities[N - i - 1]->get_r()) {
                 if (cities[N - i]->get_b()) {
                     cities[N - i]->get_b()->Archery(cities[N - i - 1]->get_r());
-                    if (cities[N - i - 1]->get_r()->get_lives() <= 0) {
-                        cities[i]->delete_r();
-                    }
                 }
 
             }
         }
-
         if (cities[N - 1]->get_r()) {
             if (blue.get()) {
                 blue.get()->Archery(cities[0]->get_r());
-                if (cities[N - 1]->get_r()->get_lives() <= 0) {
-                    cities[N - 1]->delete_r();
                 }
-            }
 
         }
         minutes += 3; //第38分钟拥有bombs的勇士自爆
