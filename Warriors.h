@@ -64,6 +64,7 @@ public:
     Crops * get_crop(); //获得当前武士所在的City
     virtual void cout_weapons() ;//输出当前的武器信息
     virtual int num_weapons();  //返回武器的数目
+    virtual void cout_win_lives(); //胜利时输出将生命元送回总部的消息
 
 
 };

@@ -227,7 +227,7 @@ int main()
         }
         for( int i=0;i<N;i++)
         {
-            red.Award(cities[i]);
+            red.Award(cities[N-1-i]);
             blue.Award(cities[i]);
         }
         for(int i=0;i<N;i++)

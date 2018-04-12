@@ -230,6 +230,15 @@ void City::Fight_in_city() {
         b->after_fight(r);
         if(r->get_lives()<=0)
         {
+            b->cout_win_lives();
+        }
+        if(b->get_lives()<=0)
+        {
+            r->cout_win_lives();
+        }
+
+        if(r->get_lives()<=0)
+        {
             winner = b;
         }
         if(b->get_lives()<=0)
@@ -277,16 +286,15 @@ void City::after_fight() {
 //    for his headquarter
     if(winner)
     {
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << hours << ':';
-        cout.width(2); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << minutes << ' ';
-        winner->cout_info();
-        int temp= get_lives();
-        cout<<" earned "<<temp <<" elements for his headquarter"<<endl;
-        winner->get_crop()->add_lives(temp);
+//        cout.width(3); // 设置宽度
+//        cout.fill('0');// 设置填充
+//        cout << hours << ':';
+//        cout.width(2); // 设置宽度
+//        cout.fill('0');// 设置填充
+//        cout << minutes << ' ';
+//        winner->cout_info();
+//        cout<<" earned "<<get_lives_info()<<" elements for his headquarter"<<endl;
+        winner->get_crop()->add_lives(get_lives());
         if(winner->get_crop()->get_name()=="blue")
         {
             if(flag!=2)
@@ -339,76 +347,13 @@ void City::after_fight() {
             delete b;
             b=NULL;
         }
+
         winner=NULL;
     }
 
 
 }
-//void City::after_fight(Warriors *winner, Warriors *loser) {
-////    001:40 blue dragon 2 earned 10 elements
-////    for his headquarter
-//
-//    cout.width(3); // 设置宽度
-//    cout.fill('0');// 设置填充
-//    cout << hours << ':';
-//    cout.width(2); // 设置宽度
-//    cout.fill('0');// 设置填充
-//    cout << minutes << ' ';
-//    winner->cout_info();
-//    int temp= get_lives();
-//    cout<<" earned "<<temp <<" elements for his headquarter"<<endl;
-//    winner->get_crop()->add_lives(temp);
-//    if(winner->get_crop()->get_name()=="blue")
-//    {
-//        if(flag!=2)
-//        {
-//            step_b++;
-//            if(step_b==2)
-//            {
-//                flag=2;
-//                step_b=0;
-//                // 004:40 blue flag raised in city 4
-//                cout.width(3); // 设置宽度
-//                cout.fill('0');// 设置填充
-//                cout << hours << ':';
-//                cout.width(2); // 设置宽度
-//                cout.fill('0');// 设置填充
-//                cout << minutes << " blue flag raise in city"<< index;
-//            }
-//
-//        }
-//    }
-//    else
-//    {
-//        if(flag!=1)
-//        {
-//            step_r++;
-//            if(step_r==2)
-//            {
-//                flag=1;
-//                step_r=0;
-//                // 004:40 blue flag raised in city 4
-//                cout.width(3); // 设置宽度
-//                cout.fill('0');// 设置填充
-//                cout << hours << ':';
-//                cout.width(2); // 设置宽度
-//                cout.fill('0');// 设置填充
-//                cout << minutes << " blue flag raise in city"<< index;
-//            }
-//
-//        }
-//
-//    }
-//    if(loser->get_crop()->get_name()=="blue")
-//    {
-//        b=NULL;
-//    }
-//    else
-//    {
-//        r=NULL;
-//    }
-//    delete(loser);
-//}
+
 
 void City::cout_warriors_weapon() {
     if(r)
@@ -435,5 +380,6 @@ void City::blue_to_null() {
 Warriors *City::get_winner() {
     return winner;
 }
+
 
 

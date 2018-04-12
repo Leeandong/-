@@ -403,6 +403,18 @@ int Warriors::num_weapons() {
 
 }
 
+void Warriors::cout_win_lives() {
+    //003:40 red lion 2 earned 10 elements for his headquarter
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout<<hours<<':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+         <<" earned "<<cities[city_num-1]->get_lives_info()<<" elements for his headquarter"<<endl;
+
+}
+
 
 
 
