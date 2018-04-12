@@ -275,6 +275,7 @@ void City::after_fight(Warriors *winner, Warriors *loser) {
     winner->cout_info();
     int temp= get_lives();
     cout<<" earned "<<temp <<" elements for his headquarter"<<endl;
+    winner->get_crop()->Award(winner);
     winner->get_crop()->add_lives(temp);
     if(winner->get_crop()->get_name()=="blue")
     {
@@ -349,5 +350,7 @@ void City::blue_to_null() {
     b=NULL;
 
 }
+
+
 
 

@@ -47,6 +47,7 @@ public:
     void add_enemy(Warriors * w); //加入进入我方指挥部的敌人
     void cout_reach(); //宣布到达信息，并删除敌人节点
     void cout_lives(); //报告当前的生命元信息
+    void Award(Warriors * w); //奖励获胜的士兵
 
 
     virtual ~Crops();

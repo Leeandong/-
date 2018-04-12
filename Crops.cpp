@@ -188,7 +188,14 @@ void Crops::cout_lives() {
 }
 
 
+void Crops::Award(Warriors *w) {
+    if(lives>=8)
+    {
+        w->add_lives(8);
+        lives-=8;
+    }
 
+}
 
 
 
