@@ -20,6 +20,7 @@ private:
     int step_b; //记录蓝方连胜次数
     Warriors * b;  //指向蓝军士兵
     Warriors * r;  //指向红军士兵
+    Warriors * winner; //指向胜利者
 public:
     void produce_lives();  //生产生命元
     void set_flag(int color);
@@ -42,10 +43,11 @@ public:
     void Fight_in_city(); //在城市进行战斗
     void after_win(Warriors *winner, Warriors *loser); //胜利后的操作
     int which_first_attack(); //谁先攻击，奇数红先进攻，偶数蓝先进攻
-    void after_fight(Warriors * winner, Warriors * loser); //战斗结束后有人获胜城市的相关操作
+    void after_fight(); //战斗结束后有人获胜城市的相关操作
     void cout_warriors_weapon(); //输出当前武士的武器信息
     void red_to_null();  //将红方武士指针置空
     void blue_to_null(); // 将蓝方武士指针置空
+    Warriors * get_winner() ; //获得获胜的士兵
 
 
 

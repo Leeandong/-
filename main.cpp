@@ -225,6 +225,15 @@ int main()
         for (int i = 0; i < N; i++) {
             cities[i]->Fight_in_city();
         }
+        for( int i=0;i<N;i++)
+        {
+            red.Award(cities[i]);
+            blue.Award(cities[i]);
+        }
+        for(int i=0;i<N;i++)
+        {
+            cities[i]->after_fight();
+        }
         minutes += 10; //第50分钟司令部报告生命元数目
         {
 //            000:50 100 elements in red headquarter

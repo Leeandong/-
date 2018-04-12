@@ -187,6 +187,22 @@ void Crops::cout_lives() {
 
 }
 
+void Crops::Award(City * c) {
+    if(c->get_winner())
+    {
+        if(c->get_winner()->get_crop()==this)
+        {
+            if(lives>=8)
+            {
+                lives-=8;
+                c->get_winner()->add_lives(8);
+            }
+        }
+    }
+
+
+}
+
 
 
 
