@@ -110,7 +110,7 @@ int main()
         cities[i] = new City(i+1);
     }
     hours=0;
-    while(hours<8) {
+    while(hours<10) {
         minutes = 0;
         creat_warriors(&red);
         creat_warriors(&blue);
@@ -276,15 +276,18 @@ int main()
         }
         minutes += 5; //第55分钟武士报告武器情况
         {
-            red.cout_enemys_weapon();
-            for (int i = 0; i < N; i++) {
-                cities[i]->cout_r_weapon();
-            }
 
             for (int i = 0; i < N; i++) {
-                cities[i]->cout_b_weapon();
+                cities[i]->cout_r_weapon();
+
             }
             blue.cout_enemys_weapon();
+            red.cout_enemys_weapon();
+            for (int i = 0; i < N; i++) {
+                cities[i]->cout_b_weapon();
+
+            }
+
         }
 
 

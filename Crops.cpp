@@ -11,13 +11,8 @@
 Crops::Crops(int lives, int *p_warriors, const string &name
              ) : lives(lives), p_warriors(p_warriors),
                                         name(name)  {
-    for(int i=0;i<5;i++)
-    {
-        num_warriors[i]=0;
-
-    }
     warriors=NULL;
-    enemys=NULL;
+    enemy=NULL;
     num=0;
     flag=0;
     index=0;
@@ -52,8 +47,6 @@ int Crops::which_to_creat() {
     {
         int temp= warriors_strength[p_warriors[(flag)%5]];
         lives -= temp;
-//        lives -= warriors_strength[p_warriors[(flag)%5]];
-        num_warriors[p_warriors[flag]] += 1;
         num++;
         flag++;
         return p_warriors[(flag-1)%5];
@@ -70,10 +63,6 @@ int Crops::get_num() {
     return num;
 }
 
-
-int *Crops::get_num_warriors() {
-    return num_warriors;
-}
 
 int Crops::get_lives() {
     return lives;
@@ -101,8 +90,18 @@ string &Crops::get_name() {
 Crops::~Crops() {
     if(warriors)
         delete(warriors);
-    if(enemys)
-        delete(enemys);
+    if(enemy)
+        delete(enemy);
+    for(int i=0;i<2;i++)
+    {
+        if(enemys[i])
+        {
+            delete enemys[i];
+        }
+
+
+    }
+
 
 }
 
@@ -146,16 +145,23 @@ void Crops::delete_run() {
 }
 
 void Crops::add_enemy(Warriors * w) {
-    enemys = w;
+    enemy = w;
 
 }
 
 void Crops::cout_reach() {
-    if(enemys)
+    if(enemy)
     {
-        enemys->cout_reach(this);
-        delete enemys;
-        enemys=NULL;
+        enemy->cout_reach(this);
+        if(!enemys[0])
+        {
+            enemys[0]=enemy;
+        }
+        else
+        {
+            enemys[1]=enemy;
+        }
+        enemy=NULL;
         num_enemy++;
         if(num_enemy>=2)
         {
@@ -205,9 +211,12 @@ void Crops::Award(City * c) {
 }
 
 void Crops::cout_enemys_weapon() {
-    if(enemys)
     {
-        enemys->cout_weapons();
+        for(int i=0;i<2;i++)
+        {
+            if(enemys[i])
+            enemys[i]->cout_weapons();
+        }
     }
 
 }
