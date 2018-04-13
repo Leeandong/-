@@ -123,11 +123,9 @@ int main()
         minutes += 5; //第10分钟武士前进
         if (cities[0]->get_b()) {
             red.add_enemy(cities[0]->get_b());
-            cities[0]->delete_b();
         }
         if (cities[N - 1]->get_r()) {
             blue.add_enemy(cities[N - 1]->get_r());
-            cities[N - 1]->delete_r();
         }
         for (int i = 1; i < N; i++) {
             if (cities[N - i - 1]->get_r()) {
@@ -209,6 +207,7 @@ int main()
 
             }
         }
+
         if (cities[N - 1]->get_r()) {
             if (blue.get()) {
                 blue.get()->Archery(cities[0]->get_r());
@@ -264,42 +263,19 @@ int main()
     }
     delete []cities;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     return 0;
 }
+
+
+//--------此处为分割线
+
+
+//int main()
+//{
+//    Crops c = Crops(100,blue_sequence,"red");
+//    Warriors * p =new Lion(1,2, &c, 100);
+//    c.add_enemy(p);
+//    c.cout_reach();
+//    return 0;
+//
+//}

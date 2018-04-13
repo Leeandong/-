@@ -49,7 +49,6 @@ Warriors::Warriors(int serial_num, int strength, Crops * c_) : serial_num(serial
 void Warriors::Hurted(int a){strength-=a;}
 
 Warriors::~Warriors() {
-
 }
 
 void Warriors::fightback(Warriors *p) {
