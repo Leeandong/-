@@ -154,7 +154,7 @@ void Crops::cout_reach() {
     if(enemys)
     {
         enemys->cout_reach(this);
-        delete(enemys);
+        delete enemys;
         enemys=NULL;
         num_enemy++;
         if(num_enemy>=2)

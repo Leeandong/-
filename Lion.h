@@ -28,6 +28,8 @@ public:
     virtual void lose(Warriors *winner, City *c);
 
     virtual void after_fight(Warriors *w);
+
+    virtual ~Lion();
     //忠诚度低于一定值时逃跑
 };
 

@@ -50,7 +50,6 @@ void Warriors::Hurted(int a){strength-=a;}
 
 Warriors::~Warriors() {
 
-
 }
 
 void Warriors::fightback(Warriors *p) {

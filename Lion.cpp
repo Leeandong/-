@@ -65,3 +65,13 @@ void Lion::after_fight(Warriors *w) {
     }
 
 }
+
+Lion::~Lion() {
+    if(sword)
+        delete(sword);
+    if(arrow)
+        delete(arrow);
+    if(bomb)
+        delete(bomb);
+
+}

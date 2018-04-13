@@ -145,7 +145,7 @@ int main()
             cities[N - 1]->add_b(blue.get());
             blue.warriors_to_null();
         }
-        blue.cout_reach();
+        red.cout_reach();
         if (red.lose()) {
             for (int i = 0; i < N; i++) {
                 delete cities[i];
@@ -163,7 +163,7 @@ int main()
 
             }
         }
-        red.cout_reach();
+        blue.cout_reach();
         if (blue.lose()) {
             for (int i = 0; i < N; i++) {
                 delete cities[i];

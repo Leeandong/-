@@ -44,8 +44,6 @@ Dragon::~Dragon() {
         delete(arrow);
     if(bomb)
         delete(bomb);
-
-
 }
 
 
