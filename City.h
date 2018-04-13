@@ -44,7 +44,9 @@ public:
     void after_win(Warriors *winner, Warriors *loser); //胜利后的操作
     int which_first_attack(); //谁先攻击，奇数红先进攻，偶数蓝先进攻
     void after_fight(); //战斗结束后有人获胜城市的相关操作
-    void cout_warriors_weapon(); //输出当前武士的武器信息
+//    void cout_warriors_weapon(); //输出当前武士的武器信息
+    void cout_r_weapon(); //输出红色武士的武器信息
+    void cout_b_weapon(); //输出蓝色武士的武器信息
     void red_to_null();  //将红方武士指针置空
     void blue_to_null(); // 将蓝方武士指针置空
     Warriors * get_winner() ; //获得获胜的士兵

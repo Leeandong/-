@@ -50,8 +50,9 @@ Crops::Crops(int lives, int *p_warriors, const string &name
 int Crops::which_to_creat() {
     if(warriors_strength[p_warriors[(flag)%5]]<=lives)
     {
-
-        lives -= warriors_strength[p_warriors[flag]];
+        int temp= warriors_strength[p_warriors[(flag)%5]];
+        lives -= temp;
+//        lives -= warriors_strength[p_warriors[(flag)%5]];
         num_warriors[p_warriors[flag]] += 1;
         num++;
         flag++;

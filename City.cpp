@@ -354,18 +354,20 @@ void City::after_fight() {
 
 }
 
+//
+//void City::cout_warriors_weapon() {
+//    if(r)
+//    {
+//        r->cout_weapons();
+//    }
+//    if(b)
+//    {
+//        b->cout_weapons();
+//    }
+//
+//}
 
-void City::cout_warriors_weapon() {
-    if(r)
-    {
-        r->cout_weapons();
-    }
-    if(b)
-    {
-        b->cout_weapons();
-    }
 
-}
 
 void City::red_to_null() {
     r=NULL;
@@ -379,6 +381,21 @@ void City::blue_to_null() {
 
 Warriors *City::get_winner() {
     return winner;
+}
+
+void City::cout_r_weapon() {
+        if(r)
+    {
+        r->cout_weapons();
+    }
+
+}
+
+void City::cout_b_weapon() {
+    if(b)
+    {
+        b->cout_weapons();
+    }
 }
 
 

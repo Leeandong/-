@@ -146,9 +146,12 @@ void Warriors::Archery(Warriors *w) {
         cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num<<" shot";
         if(w->get_lives()<=0)
         {
+            cout<<" and killed ";
             w->cout_info();
         }
         cout<<endl;
+
+//        005:35 red dragon 5 shot and killed blue ninja 3
     }
 
 

@@ -51,7 +51,7 @@ void Iceman::Hurted(int a) {
 
 void Iceman::Attack(Warriors *p) {
     Warriors::Attack(p);
-    p->Hurted(warriors_attack[2]);
+    p->Hurted(attack);
     p->fightback(this);
 }
 
@@ -69,7 +69,6 @@ void Iceman::forward() {
             strength=1;
         }
         attack+=20;
-
     }
 
 }

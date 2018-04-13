@@ -110,7 +110,7 @@ int main()
         cities[i] = new City(i+1);
     }
     hours=0;
-    while(hours<4) {
+    while(hours<6) {
         minutes = 0;
         creat_warriors(&red);
         creat_warriors(&blue);
@@ -246,7 +246,11 @@ int main()
 
         }
         for (int i = 0; i < N; i++) {
-            cities[i]->cout_warriors_weapon();
+            cities[i]->cout_r_weapon();
+        }
+
+        for (int i = 0; i < N; i++) {
+            cities[i]->cout_b_weapon();
         }
 
         hours++;
