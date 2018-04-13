@@ -184,31 +184,34 @@ int Warriors::get_fightback_value() {
 }
 
 bool Warriors::before_use_bomb(Warriors *w) {
-    if(bomb)
-    {
-        if(w->get_fightback_value()>=strength)
-            return true;
+
+        if(bomb)
+        {
+            if((w->get_fightback_value()>=strength)&&(get_attack_value()<w->get_lives()))
+                return true;
+            else
+                return false;
+        }
         else
+        {
             return false;
-    }
-    else
-    {
-        return false;
-    }
+        }
 }
 
 bool Warriors::after_use_bomb(Warriors *w) {
-    if(bomb)
-    {
-        if(w->get_attack_value()>=strength)
-            return true;
+        if(bomb)
+        {
+            if(w->get_attack_value()>=strength)
+                return true;
+            else
+                return false;
+        }
         else
+        {
             return false;
-    }
-    else
-    {
-        return false;
-    }
+        }
+
+
 }
 
 void Warriors::cout_get_lives(City * c) {
@@ -415,6 +418,21 @@ void Warriors::cout_win_lives() {
     cout.fill('0');// 设置填充
     cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
          <<" earned "<<cities[city_num-1]->get_lives_info()<<" elements for his headquarter"<<endl;
+
+}
+
+void Warriors::cout_self_bursting(Warriors * w) {
+
+    cout.width(3); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << hours << ':';
+    cout.width(2); // 设置宽度
+    cout.fill('0');// 设置填充
+    cout << minutes << ' ' ;
+    this->cout_info();
+    cout<<" used a bomb and killed ";
+    w->cout_info();
+    cout<<endl;
 
 }
 

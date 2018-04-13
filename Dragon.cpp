@@ -92,16 +92,20 @@ void Dragon::after_fight(Warriors *w) {
         morale-=0.2;
     }
     //   003:40 blue dragon 2 yelled in city 4
-    if((strength>0)&&(morale>0.8)&&(cities[city_num-1]->which_first_attack()))
+    if((strength>0)&&(morale>0.8))
     {
+        if(((crops=="red")&&(cities[city_num-1]->which_first_attack()==1))
+            ||((crops=="blue")&&(cities[city_num-1]->which_first_attack()==0)))
+        {
+            cout.width(3); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout<<hours<<':';
+            cout.width(2); // 设置宽度
+            cout.fill('0');// 设置填充
+            cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
+                 <<" yelled in city "<<city_num<<endl;
 
-        cout.width(3); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout<<hours<<':';
-        cout.width(2); // 设置宽度
-        cout.fill('0');// 设置填充
-        cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
-             <<" yelled in city "<<city_num;
+        }
 
     }
 
