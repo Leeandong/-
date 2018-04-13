@@ -204,6 +204,14 @@ void Crops::Award(City * c) {
 
 }
 
+void Crops::cout_enemys_weapon() {
+    if(enemys)
+    {
+        enemys->cout_weapons();
+    }
+
+}
+
 
 
 

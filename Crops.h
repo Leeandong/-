@@ -48,6 +48,7 @@ public:
     void cout_reach(); //宣布到达信息，并删除敌人节点
     void cout_lives(); //报告当前的生命元信息
     void Award(City * c); //奖励获胜的武士
+    void cout_enemys_weapon() ; //输出已经进入联盟内敌人的武器信息
 
 
     virtual ~Crops();

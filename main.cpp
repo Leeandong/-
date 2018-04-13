@@ -276,6 +276,7 @@ int main()
         }
         minutes += 5; //第55分钟武士报告武器情况
         {
+            red.cout_enemys_weapon();
             for (int i = 0; i < N; i++) {
                 cities[i]->cout_r_weapon();
             }
@@ -283,7 +284,7 @@ int main()
             for (int i = 0; i < N; i++) {
                 cities[i]->cout_b_weapon();
             }
-
+            blue.cout_enemys_weapon();
         }
 
 
