@@ -188,31 +188,65 @@ int main()
 
         }
         minutes += 5; //第35分钟拥有arrows的士兵放箭
+//        if (cities[0]->get_b()) {
+//            if (red.get()) {
+//                red.get()->Archery(cities[0]->get_b());
+//            }
+//        }
+//        for (int i = 1; i < N; i++) {
+//            if (cities[i]->get_b()) {
+//                if (cities[i - 1]->get_r()) {
+//                    cities[i - 1]->get_r()->Archery(cities[i]->get_b());
+//                }
+//
+//            }
+//            if (cities[N - i - 1]->get_r()) {
+//                if (cities[N - i]->get_b()) {
+//                    cities[N - i]->get_b()->Archery(cities[N - i - 1]->get_r());
+//                }
+//
+//            }
+//        }
+//
+//        if (cities[N - 1]->get_r()) {
+//            if (blue.get()) {
+//                blue.get()->Archery(cities[0]->get_r());
+//                }
+//
+//        }
         if (cities[0]->get_b()) {
             if (red.get()) {
                 red.get()->Archery(cities[0]->get_b());
             }
         }
-        for (int i = 1; i < N; i++) {
-            if (cities[i]->get_b()) {
-                if (cities[i - 1]->get_r()) {
-                    cities[i - 1]->get_r()->Archery(cities[i]->get_b());
-                }
-
+        if(cities[1]->get_b())
+        {
+            if (cities[0]->get_r()) {
+                cities[0]->get_r()->Archery(cities[1]->get_b());
             }
-            if (cities[N - i - 1]->get_r()) {
-                if (cities[N - i]->get_b()) {
-                    cities[N - i]->get_b()->Archery(cities[N - i - 1]->get_r());
+        }
+        for (int i = 1; i < N-1; i++) {
+            if (cities[i+1]->get_b()) {
+                if (cities[i]->get_r()) {
+                    cities[i]->get_r()->Archery(cities[i+1]->get_b());
                 }
-
+            }
+            if (cities[i-1]->get_r()) {
+                if (cities[i]->get_b()) {
+                    cities[i]->get_b()->Archery(cities[i-1]->get_r());
+                }
             }
         }
 
-        if (cities[N - 1]->get_r()) {
+        if (cities[N-2]->get_r()) {
+            if (cities[N-1]->get_b()) {
+                cities[N-1]->get_b()->Archery(cities[N-2]->get_r());
+            }
+        }
+        if (cities[N-1]->get_r()) {
             if (blue.get()) {
-                blue.get()->Archery(cities[0]->get_r());
-                }
-
+                blue.get()->Archery(cities[N-1]->get_r());
+            }
         }
         minutes += 3; //第38分钟拥有bombs的勇士自爆
         {
