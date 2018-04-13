@@ -12,14 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92f90b19-492b-4f35-8774-45fcff64a389" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crops.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Crops.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crops.h" beforeDir="false" afterPath="$PROJECT_DIR$/Crops.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/City.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/City.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Warriors.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/Warriors.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/crops.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/crops.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/war2_0.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/war2_0" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/war2_0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -36,40 +29,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Warriors.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Warriors.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="64" column="29" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Warriors.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Warriors.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="273" selection-start-line="273" selection-end-line="273" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Weapon.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Weapon.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1301">
-              <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+            <state relative-caret-position="435">
+              <caret line="284" column="17" lean-forward="true" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
               <folding>
-                <element signature="e#783#802#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +55,33 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
               <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrow.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Arrow.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Global.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Global.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Global.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Global.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="469">
+              <caret line="30" column="12" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -114,8 +107,8 @@
       <file leaf-file-name="Crops.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Crops.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="-233">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
@@ -145,7 +138,10 @@
       <find>which_first_attack</find>
       <find>after_fight</find>
       <find>delete</find>
+      <find>return 0</find>
       <find>num_enemy</find>
+      <find>exit</find>
+      <find>return</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,8 +190,8 @@
         <option value="$PROJECT_DIR$/Lion.h" />
         <option value="$PROJECT_DIR$/Lion.cpp" />
         <option value="$PROJECT_DIR$/Warriors.cpp" />
-        <option value="$PROJECT_DIR$/Crops.cpp" />
         <option value="$PROJECT_DIR$/Crops.h" />
+        <option value="$PROJECT_DIR$/Crops.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -316,12 +312,12 @@
       <workItem from="1523603822321" duration="41000" />
       <workItem from="1523604202677" duration="248000" />
       <workItem from="1523606100861" duration="2955000" />
-      <workItem from="1523622832859" duration="3091000" />
+      <workItem from="1523622832859" duration="5279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146348000" />
+    <option name="totallyTimeSpent" value="148536000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,11 +338,11 @@
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49682876" side_tool="true" weight="0.20121212" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32969698" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.50317127" visible="true" weight="0.27515152" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.50317127" visible="true" weight="0.28969696" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" weight="0.28848484" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" weight="0.42666668" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -410,7 +406,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="241" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Crops.cpp</url>
+          <line>122</line>
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="245" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -662,24 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Arrow.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Bomb.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -701,13 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Global.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -774,20 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/City.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="373" column="11" selection-start-line="373" selection-start-column="11" selection-end-line="373" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/City.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Weapon.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -799,20 +767,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="273" selection-start-line="273" selection-end-line="273" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crops.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crops.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -830,12 +784,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Global.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Global.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Arrow.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/City.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="373" column="11" selection-start-line="373" selection-start-column="11" selection-end-line="373" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/City.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crops.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Crops.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="122" selection-start-line="122" selection-end-line="122" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1301">
-          <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+        <state relative-caret-position="435">
+          <caret line="284" column="17" lean-forward="true" selection-start-line="284" selection-start-column="17" selection-end-line="284" selection-end-column="17" />
           <folding>
-            <element signature="e#783#802#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>

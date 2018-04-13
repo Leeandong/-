@@ -114,8 +114,7 @@ void Crops::add_lives(int i) {
 bool Crops::lose() {
     if(num_enemy>=2)
     //003:10 blue headquarter was taken
-    {
-        cout.width(3); // 设置宽度
+    { cout.width(3); // 设置宽度
     cout.fill('0');// 设置填充
     cout<<hours<<':';
     cout.width(2); // 设置宽度
@@ -163,16 +162,6 @@ void Crops::cout_reach() {
         }
         enemy=NULL;
         num_enemy++;
-        if(num_enemy>=2)
-        {
-            cout.width(3); // 设置宽度
-            cout.fill('0');// 设置填充
-            cout<<hours<<':';
-            cout.width(2); // 设置宽度
-            cout.fill('0');// 设置填充
-            cout << minutes << ' ' << name <<" headquarter was taken"<<endl;
-            exit(0);
-        }
     }
 
 
