@@ -61,6 +61,7 @@ int main() {
     int T;
     for(int i=1;i<=n;i++)
     {
+        int stop=0;  //战争结束的标志,为1则表明战争结束
         hours=0;
         cin>>lives;
         cin>>N; //输入中间间隔的城市
@@ -106,9 +107,11 @@ int main() {
             }
             if (cities[0]->get_b()) {
                 red.add_enemy(cities[0]->get_b());
+                cities[0]->blue_to_null();
             }
             if (cities[N - 1]->get_r()) {
                 blue.add_enemy(cities[N - 1]->get_r());
+                cities[N-1]->red_to_null();
             }
             for (int i = 1; i < N; i++) {
                 if (cities[N - i - 1]->get_r()) {
@@ -127,12 +130,15 @@ int main() {
                 blue.warriors_to_null();
             }
             red.cout_reach();
+//            if (red.lose()) {
+//                for (int i = 0; i < N; i++) {
+//                    delete cities[i];
+//                }
+//                delete[]cities;
+//                break;
+//            }
             if (red.lose()) {
-                for (int i = 0; i < N; i++) {
-                    delete cities[i];
-                }
-                delete[]cities;
-                break;
+                stop=1;
             }
             for (int i = 0; i < N; i++) {
                 if (cities[i]->get_r()) {
@@ -146,13 +152,15 @@ int main() {
             }
             blue.cout_reach();
             if (blue.lose()) {
+                stop=1;
+            }
+            if (stop) {
                 for (int i = 0; i < N; i++) {
                     delete cities[i];
                 }
                 delete[]cities;
                 break;
             }
-
             minutes += 10;//第20分钟城市生产生命元
             T-=10;
             if(T<0)

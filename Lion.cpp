@@ -16,12 +16,17 @@ Lion::Lion(int serial_num, int strength,Crops * c_,int loyalty_):Warriors(serial
 void Lion::Hurted(int a) {
 //    temp_lives=strength;
     Warriors::Hurted(a);
+
 }
 
 void Lion::Attack(Warriors *p) {
     Warriors::Attack(p);
     p->Hurted(warriors_attack[3]);
     p->fightback(this);
+    if(strength<0)
+    {
+        p->add_lives(temp_lives);
+    }
 
 }
 
@@ -48,21 +53,26 @@ bool Lion::run_away() {
 
 void Lion::fightback(Warriors *p) {
     Warriors::fightback(p);
+    if(strength<0)
+    {
+        p->add_lives(temp_lives);
+    }
 }
 
 void Lion::lose(Warriors *winner, City *c) {
-    Warriors::lose(winner, c);
-    winner->add_lives(temp_lives);
-
-
+//    Warriors::lose(winner, c);
+//    winner->add_lives(temp_lives);
 }
 
 void Lion::after_fight(Warriors *w) {
     Warriors::after_fight(w);
     if(w->get_lives()>0)
     {
-        memory_lives();
         loyalty-=K;
+    }
+    if(strength>0)
+    {
+        memory_lives();
     }
 
 }
