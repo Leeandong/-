@@ -147,6 +147,10 @@ void Warriors::Archery(Warriors *w) {
             cout<<" and killed ";
             w->cout_info();
         }
+        else
+        {
+            w->memory_lives();
+        }
         cout<<endl;
 
 //        005:35 red dragon 5 shot and killed blue ninja 3
@@ -431,6 +435,10 @@ void Warriors::cout_self_bursting(Warriors * w) {
     cout<<" used a bomb and killed ";
     w->cout_info();
     cout<<endl;
+
+}
+
+void Warriors::memory_lives() {
 
 }
 

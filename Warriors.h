@@ -66,6 +66,7 @@ public:
     virtual int num_weapons();  //返回武器的数目
     virtual void cout_win_lives(); //胜利时输出将生命元送回总部的消息
     virtual void cout_self_bursting(Warriors * w); //输出自爆时候的消息
+    virtual void memory_lives(); //仅对应于狮子，存储当前生命值到temp_lives;
 
 
 };

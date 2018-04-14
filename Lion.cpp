@@ -14,7 +14,7 @@ Lion::Lion(int serial_num, int strength,Crops * c_,int loyalty_):Warriors(serial
 
 
 void Lion::Hurted(int a) {
-    temp_lives=strength;
+//    temp_lives=strength;
     Warriors::Hurted(a);
 }
 
@@ -61,6 +61,7 @@ void Lion::after_fight(Warriors *w) {
     Warriors::after_fight(w);
     if(w->get_lives()>0)
     {
+        memory_lives();
         loyalty-=K;
     }
 
@@ -74,4 +75,9 @@ Lion::~Lion() {
     if(bomb)
         delete(bomb);
 
+}
+
+void Lion::memory_lives() {
+    Warriors::memory_lives();
+    temp_lives=strength;
 }

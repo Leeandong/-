@@ -29,6 +29,8 @@ public:
 
     virtual void after_fight(Warriors *w);
 
+    virtual void memory_lives();
+
     virtual ~Lion();
     //忠诚度低于一定值时逃跑
 };
