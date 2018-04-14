@@ -37,6 +37,17 @@ City::City(int index_) {
 
 
 void City::delete_run() {
+
+    if(r)
+    {
+        if(r->run_away())
+        {
+            delete r;
+            r=NULL;
+        }
+
+    }
+
     if(b)
     {
         if(b->run_away())

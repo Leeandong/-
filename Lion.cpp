@@ -40,8 +40,11 @@ bool Lion::run_away() {
     {
         cout.width(3); // 设置宽度
         cout.fill('0');// 设置填充
+        cout << hours << ':';
+        cout.width(2); // 设置宽度
+        cout.fill('0');// 设置填充
         cout << minutes << ' ' << crops << ' ' <<name<<' '<< serial_num
-             <<" run away"<< endl;
+             <<" ran away"<< endl;
         return true;
     }
     else
