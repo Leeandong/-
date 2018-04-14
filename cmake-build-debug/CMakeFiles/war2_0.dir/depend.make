@@ -56,6 +56,7 @@ CMakeFiles/war2_0.dir/Global.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Arrow.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Bomb.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../City.h
+CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Crops.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Global.h
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Iceman.cpp
 CMakeFiles/war2_0.dir/Iceman.cpp.o: ../Iceman.h

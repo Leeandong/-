@@ -199,11 +199,15 @@ int main() {
                     red.get()->Archery(cities[0]->get_b());
                 }
             }
-            if(cities[1]->get_b())
+            if(N>1)
             {
-                if (cities[0]->get_r()) {
-                    cities[0]->get_r()->Archery(cities[1]->get_b());
+                if(cities[1]->get_b())
+                {
+                    if (cities[0]->get_r()) {
+                        cities[0]->get_r()->Archery(cities[1]->get_b());
+                    }
                 }
+
             }
             for (int i = 1; i < N-1; i++) {
                 if (cities[i+1]->get_b()) {
@@ -217,12 +221,16 @@ int main() {
                     }
                 }
             }
-
-            if (cities[N-2]->get_r()) {
-                if (cities[N-1]->get_b()) {
-                    cities[N-1]->get_b()->Archery(cities[N-2]->get_r());
+            if(N>1)
+            {
+                if (cities[N-2]->get_r()) {
+                    if (cities[N-1]->get_b()) {
+                        cities[N-1]->get_b()->Archery(cities[N-2]->get_r());
+                    }
                 }
             }
+
+
             if (cities[N-1]->get_r()) {
                 if (blue.get()) {
                     blue.get()->Archery(cities[N-1]->get_r());

@@ -9,6 +9,7 @@
 #include "Warriors.h"
 #include <string>
 #include "Global.h"
+#include "Crops.h"
 using namespace std;
 
 class Iceman: public Warriors {
@@ -21,6 +22,8 @@ public:
     virtual void Hurted(int a) ;   //受伤函数
     virtual void Attack(Warriors *p) ; //攻击函数
     virtual void forward();
+
+    virtual void cout_reach(Crops *c);
 
 };
 
