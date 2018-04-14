@@ -66,7 +66,8 @@ void Dragon::Attack(Warriors *p) {
 
 void Dragon::cout_born() {
     Warriors::cout_born();
-    cout<<"Its morale is "<<fixed<<setprecision(2)<<morale<<endl;
+    cout<<"Its morale is "<<fixed<<setprecision(2)<<(morale)<<endl;
+
 }
 
 void Dragon::fightback(Warriors *p) {

@@ -441,13 +441,24 @@ void City::after_win(Warriors *winner, Warriors *loser) {
 }
 
 int City::which_first_attack() {
-    if((index%2==1)||(flag==1))
+    if(flag==1)
     {
         return 1;
     }
-    else
+    else if(flag ==2)
     {
         return 0;
+    }
+    else
+    {
+        if(index%2==1)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
 }
