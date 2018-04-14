@@ -11,11 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92f90b19-492b-4f35-8774-45fcff64a389" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Iceman.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Iceman.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Iceman.h" beforeDir="false" afterPath="$PROJECT_DIR$/Iceman.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="92f90b19-492b-4f35-8774-45fcff64a389" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,8 +68,8 @@
       <file leaf-file-name="Iceman.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Iceman.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+            <state relative-caret-position="321">
+              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
               <folding>
                 <element signature="e#39#58#0" expanded="true" />
               </folding>
@@ -323,12 +319,12 @@
       <workItem from="1523604202677" duration="248000" />
       <workItem from="1523606100861" duration="2955000" />
       <workItem from="1523622832859" duration="15055000" />
-      <workItem from="1523703724577" duration="6601000" />
+      <workItem from="1523703724577" duration="7689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="164913000" />
+    <option name="totallyTimeSpent" value="166001000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,15 +337,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.13742071" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49875313" visible="true" weight="0.13742071" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917705" />
       <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.47991544" weight="0.32848486" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49682876" side_tool="true" weight="0.20121212" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50317127" visible="true" weight="0.28969696" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50317127" weight="0.28969696" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
@@ -920,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Iceman.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
+        <state relative-caret-position="321">
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
           <folding>
             <element signature="e#39#58#0" expanded="true" />
           </folding>
