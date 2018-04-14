@@ -457,6 +457,7 @@ void City::after_fight() {
     {
 
         winner->get_crop()->add_lives(get_lives());
+        winner->memory_lives();
         if(winner->get_crop()->get_name()=="blue")
         {
             delete r;
