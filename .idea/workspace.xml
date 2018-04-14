@@ -32,8 +32,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="98" column="37" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="37" />
+            <state relative-caret-position="207">
+              <caret line="247" selection-start-line="247" selection-end-line="247" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -41,29 +41,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Crops.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crops.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="150" column="12" selection-start-line="150" selection-start-column="12" selection-end-line="150" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="City.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="City.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/City.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            <state relative-caret-position="-2297">
+              <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Warriors.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Warriors.h">
+      <file leaf-file-name="City.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/City.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+            <state relative-caret-position="314">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="157" selection-start-line="5" selection-start-column="157" selection-end-line="5" selection-end-column="157" />
             </state>
           </provider>
         </entry>
@@ -71,8 +71,26 @@
       <file leaf-file-name="Ninja.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ninja.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="354">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bomb.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bomb.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arrow.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Arrow.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -80,35 +98,17 @@
       <file leaf-file-name="Warriors.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Warriors.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="442" selection-start-line="442" selection-end-line="442" />
+            <state relative-caret-position="154">
+              <caret line="203" selection-start-line="203" selection-end-line="203" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sword.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sword.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lion.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Lion.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lion.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sword.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sword.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="576">
+              <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -141,8 +141,8 @@
       <find>return 0</find>
       <find>num_enemy</find>
       <find>exit</find>
-      <find>Archer</find>
       <find>return</find>
+      <find>Archer</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -192,8 +192,8 @@
         <option value="$PROJECT_DIR$/Lion.h" />
         <option value="$PROJECT_DIR$/Warriors.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Lion.cpp" />
         <option value="$PROJECT_DIR$/City.cpp" />
+        <option value="$PROJECT_DIR$/Lion.cpp" />
       </list>
     </option>
   </component>
@@ -313,12 +313,12 @@
       <workItem from="1523603822321" duration="41000" />
       <workItem from="1523604202677" duration="248000" />
       <workItem from="1523606100861" duration="2955000" />
-      <workItem from="1523622832859" duration="10974000" />
+      <workItem from="1523622832859" duration="12003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154231000" />
+    <option name="totallyTimeSpent" value="155260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,11 +339,11 @@
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.49682876" side_tool="true" weight="0.20121212" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32969698" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50317127" weight="0.28969696" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50317127" visible="true" weight="0.28969696" />
       <window_info id="Structure" order="1" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917705" />
       <window_info id="Favorites" order="2" sideWeight="0.50124687" side_tool="true" weight="0.14799154" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" visible="true" weight="0.35151514" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49048626" weight="0.35151514" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -413,18 +413,8 @@
           <line>122</line>
           <option name="timeStamp" value="244" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>241</line>
-          <option name="timeStamp" value="253" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>247</line>
-          <option name="timeStamp" value="255" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="256" />
+      <option name="time" value="263" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
@@ -642,13 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Arrow.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Developer/CommandLineTools/usr/include/c++/v1/string">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -674,20 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="157" selection-start-line="5" selection-start-column="157" selection-end-line="5" selection-end-column="157" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Bomb.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -754,13 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/City.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crops.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -772,13 +734,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Ninja.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1404">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -803,13 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lion.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crops.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -817,34 +765,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Warriors.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="442" selection-start-line="442" selection-end-line="442" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lion.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="98" column="37" selection-start-line="98" selection-start-column="27" selection-end-line="98" selection-end-column="37" />
+        <state relative-caret-position="207">
+          <caret line="247" selection-start-line="247" selection-end-line="247" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Arrow.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bomb.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ninja.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Warriors.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="157" selection-start-line="5" selection-start-column="157" selection-end-line="5" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/City.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/City.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+        <state relative-caret-position="-2297">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lion.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lion.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
         </state>
       </provider>
     </entry>

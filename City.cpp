@@ -131,7 +131,7 @@ void City::self_bursting() {
 
 
                 }
-                if(b->after_use_bomb(r))
+                else if(b->after_use_bomb(r))
                 {
                     b->cout_self_bursting(r);
                     this->delete_b();
@@ -151,7 +151,7 @@ void City::self_bursting() {
                     this->delete_r();
 
                 }
-                if(r->after_use_bomb(b))
+                else if(r->after_use_bomb(b))
                 {
                     r->cout_self_bursting(b);
                     this->delete_b();
@@ -276,8 +276,23 @@ void City::Fight_in_city() {
         }
 
 
-
-
+    }
+    else
+    {
+        if(r)
+        {
+            if(r->get_lives()<=0)
+            {
+                delete_r();
+            }
+        }
+        if(b)
+        {
+            if(b->get_lives()<=0)
+            {
+                delete_b();
+            }
+        }
     }
 
 
