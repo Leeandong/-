@@ -175,104 +175,238 @@ int City::get_lives_info() {
     return lives;
 }
 
+//void City::Fight_in_city() {
+//    if(r&&b)
+//    {
+//        if((r->get_lives()>0)&&(b->get_lives()>0))
+//        {
+//            if(which_first_attack())
+//            {
+//                r->Attack(b);
+//            }
+//            else
+//            {
+//                b->Attack(r);
+//            }
+//            if(r->get_lives()<=0)
+//            {
+//                r->cout_die();
+//            }
+//            if(b->get_lives()<=0)
+//            {
+//                b->cout_die();
+//            }
+//        }
+//        if(r->get_lives()<=0)
+//        {
+//            after_win(b,r);
+//        }
+//        if(b->get_lives()<=0)
+//        {
+//            after_win(r,b);
+//        }
+//        r->after_fight(b);
+//        b->after_fight(r);
+//        if(r->get_lives()<=0)
+//        {
+//            b->cout_win_lives();
+//            if(step_r>0)
+//            {
+//                step_r=0;
+//            }
+//            if(flag!=2)
+//            {
+//                step_b++;
+//                if(step_b==2)
+//                {
+//                    flag=2;
+//                    step_b=0;
+//                    // 004:40 blue flag raised in city 4
+//                    cout.width(3); // 设置宽度
+//                    cout.fill('0');// 设置填充
+//                    cout << hours << ':';
+//                    cout.width(2); // 设置宽度
+//                    cout.fill('0');// 设置填充
+//                    cout << minutes << " blue flag raised in city "<< index<<endl;
+//                }
+//
+//            }
+//
+//        }
+//        else if(b->get_lives()<=0)
+//        {
+//            r->cout_win_lives();
+//            if(step_b>0)
+//            {
+//                step_b=0;
+//            }
+//
+//            if(flag!=1)
+//            {
+//                step_r++;
+//                if(step_r==2)
+//                {
+//                    flag=1;
+//                    step_r=0;
+//                    // 004:40 blue flag raised in city 4
+//                    cout.width(3); // 设置宽度
+//                    cout.fill('0');// 设置填充
+//                    cout << hours << ':';
+//                    cout.width(2); // 设置宽度
+//                    cout.fill('0');// 设置填充
+//                    cout << minutes << " red flag raised in city "<< index<<endl;
+//                }
+//
+//            }
+//
+//        }
+//        else
+//        {
+//            step_b=0;
+//            step_r=0;
+//        }
+//
+//        if(r->get_lives()<=0)
+//        {
+//            winner = b;
+//        }
+//        if(b->get_lives()<=0)
+//        {
+//            winner = r;
+//        }
+//
+//
+//    }
+//    else
+//    {
+//        if(r)
+//        {
+//            if(r->get_lives()<=0)
+//            {
+//                delete_r();
+//            }
+//        }
+//        if(b)
+//        {
+//            if(b->get_lives()<=0)
+//            {
+//                delete_b();
+//            }
+//        }
+//    }
+//
+//
+//
+//}
 void City::Fight_in_city() {
     if(r&&b)
     {
-        if((r->get_lives()>0)&&(b->get_lives()>0))
+        if((r->get_lives()<=0)&&(b->get_lives()<=0))
         {
-            if(which_first_attack())
-            {
-                r->Attack(b);
-            }
-            else
-            {
-                b->Attack(r);
-            }
-            if(r->get_lives()<=0)
-            {
-                r->cout_die();
-            }
-            if(b->get_lives()<=0)
-            {
-                b->cout_die();
-            }
-        }
-        if(r->get_lives()<=0)
-        {
-            after_win(b,r);
-        }
-        if(b->get_lives()<=0)
-        {
-            after_win(r,b);
-        }
-        r->after_fight(b);
-        b->after_fight(r);
-        if(r->get_lives()<=0)
-        {
-            b->cout_win_lives();
-            if(step_r>0)
-            {
-                step_r=0;
-            }
-            if(flag!=2)
-            {
-                step_b++;
-                if(step_b==2)
-                {
-                    flag=2;
-                    step_b=0;
-                    // 004:40 blue flag raised in city 4
-                    cout.width(3); // 设置宽度
-                    cout.fill('0');// 设置填充
-                    cout << hours << ':';
-                    cout.width(2); // 设置宽度
-                    cout.fill('0');// 设置填充
-                    cout << minutes << " blue flag raised in city "<< index<<endl;
-                }
-
-            }
-
-        }
-        else if(b->get_lives()<=0)
-        {
-            r->cout_win_lives();
-            if(step_b>0)
-            {
-                step_b=0;
-            }
-
-            if(flag!=1)
-            {
-                step_r++;
-                if(step_r==2)
-                {
-                    flag=1;
-                    step_r=0;
-                    // 004:40 blue flag raised in city 4
-                    cout.width(3); // 设置宽度
-                    cout.fill('0');// 设置填充
-                    cout << hours << ':';
-                    cout.width(2); // 设置宽度
-                    cout.fill('0');// 设置填充
-                    cout << minutes << " red flag raised in city "<< index<<endl;
-                }
-
-            }
-
+            delete_r();
+            delete_b();
         }
         else
         {
-            step_b=0;
-            step_r=0;
-        }
+            if((r->get_lives()>0)&&(b->get_lives()>0))
+            {
+                if(which_first_attack())
+                {
+                    r->Attack(b);
+                }
+                else
+                {
+                    b->Attack(r);
+                }
+                if(r->get_lives()<=0)
+                {
+                    r->cout_die();
+                }
+                if(b->get_lives()<=0)
+                {
+                    b->cout_die();
+                }
+            }
+            if(r->get_lives()<=0)
+            {
+                after_win(b,r);
+            }
+            if(b->get_lives()<=0)
+            {
+                after_win(r,b);
+            }
+            r->after_fight(b);
+            b->after_fight(r);
+            if(r->get_lives()<=0)
+            {
+                b->cout_win_lives();
+                if(step_r>0)
+                {
+                    step_r=0;
+                }
+                if(flag!=2)
+                {
+                    step_b++;
+                    if(step_b==2)
+                    {
+                        flag=2;
+                        step_b=0;
+                        // 004:40 blue flag raised in city 4
+                        cout.width(3); // 设置宽度
+                        cout.fill('0');// 设置填充
+                        cout << hours << ':';
+                        cout.width(2); // 设置宽度
+                        cout.fill('0');// 设置填充
+                        cout << minutes << " blue flag raised in city "<< index<<endl;
+                    }
 
-        if(r->get_lives()<=0)
-        {
-            winner = b;
-        }
-        if(b->get_lives()<=0)
-        {
-            winner = r;
+                }
+
+            }
+            else if(b->get_lives()<=0)
+            {
+                r->cout_win_lives();
+                if(step_b>0)
+                {
+                    step_b=0;
+                }
+
+                if(flag!=1)
+                {
+                    step_r++;
+                    if(step_r==2)
+                    {
+                        flag=1;
+                        step_r=0;
+                        // 004:40 blue flag raised in city 4
+                        cout.width(3); // 设置宽度
+                        cout.fill('0');// 设置填充
+                        cout << hours << ':';
+                        cout.width(2); // 设置宽度
+                        cout.fill('0');// 设置填充
+                        cout << minutes << " red flag raised in city "<< index<<endl;
+                    }
+
+                }
+
+            }
+            else
+            {
+                step_b=0;
+                step_r=0;
+            }
+
+            if(r->get_lives()<=0)
+            {
+                winner = b;
+            }
+            if(b->get_lives()<=0)
+            {
+                winner = r;
+            }
+
+
+
         }
 
 
@@ -323,47 +457,6 @@ void City::after_fight() {
     {
 
         winner->get_crop()->add_lives(get_lives());
-//        if(winner->get_crop()->get_name()=="blue")
-//        {
-//            if(flag!=2)
-//            {
-//                step_b++;
-//                if(step_b==2)
-//                {
-//                    flag=2;
-//                    step_b=0;
-//                    // 004:40 blue flag raised in city 4
-//                    cout.width(3); // 设置宽度
-//                    cout.fill('0');// 设置填充
-//                    cout << hours << ':';
-//                    cout.width(2); // 设置宽度
-//                    cout.fill('0');// 设置填充
-//                    cout << minutes << " blue flag raise in city"<< index<<endl;
-//                }
-//
-//            }
-//        }
-//        else
-//        {
-//            if(flag!=1)
-//            {
-//                step_r++;
-//                if(step_r==2)
-//                {
-//                    flag=1;
-//                    step_r=0;
-//                    // 004:40 blue flag raised in city 4
-//                    cout.width(3); // 设置宽度
-//                    cout.fill('0');// 设置填充
-//                    cout << hours << ':';
-//                    cout.width(2); // 设置宽度
-//                    cout.fill('0');// 设置填充
-//                    cout << minutes << " blue flag raise in city"<< index<<endl;
-//                }
-//
-//            }
-
-//        }
         if(winner->get_crop()->get_name()=="blue")
         {
             delete r;

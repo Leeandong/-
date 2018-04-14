@@ -53,7 +53,7 @@ void creat_warriors(Crops * c)  //制造士兵
 
 
 int main() {
-    int n=0;  //输入的测试组数目
+    int n;  //输入的测试组数目
     int lives;
     cin>>n;
     string a="blue";
@@ -84,7 +84,7 @@ int main() {
             cities[i] = new City(i+1);
         }
         cout<<"Case:"<<i<<endl;
-        while(hours<T) {
+        while(1) {
             minutes = 0;
             creat_warriors(&red);
             creat_warriors(&blue);
@@ -289,12 +289,12 @@ int main() {
                 }
 
             }
-            hours++;
             T-=5;
             if(T<0)
             {
                 break;
             }
+            hours++;
         }
 
 
